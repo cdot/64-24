@@ -1,0 +1,465 @@
+<html>
+  <head>
+    <script>
+      const cols = {
+        "Black": "000000",
+        "Bottle green": "00500d",
+        "Brown": "9f6500",
+        "Charcoal": "303030",
+        "Heather grey": "c1c1c1",
+        "Hot Pink": "FF30FF",
+        "Jade": "00a86c",
+        "Kelly Green": "008d49",
+        "Maroon": "A00100",
+        "Military green": "686500",
+        "Navy": "000B52",
+        "Olive": "266667",
+        "Orange": "FFA908",
+        "Pink": "FF9CCD",
+        "Purple": "9C24CE",
+        "Red": "FF0300",
+        "Royal": "0044FF",
+        "Sapphire blue": "0057bc",
+        "Sky": "ABB2FF",
+        "Violet": "ce9fff",
+        "White": "FFFFFF",
+        "Yellow": "FFCB62"
+      };
+      let colList = Object.keys(cols).sort();
+      let curCol = -1;
+      function nextColour() {
+        curCol = (curCol + 1) % colList.length;
+        const col = colList[curCol];
+        const name = document.querySelector("#colour-name");
+        name.textContent = col;
+        const regular = document.querySelector("#regular");
+        const inverse = document.querySelector("#inverse");
+        regular.style.backgroundColor = `#${cols[col]}FF`
+        inverse.style.backgroundColor = `#${cols[col]}FF`
+      }
+      function begin() {
+        const button = document.querySelector("#switch");
+        button.addEventListener("click", nextColour);
+        nextColour();
+      }
+    </script>
+  </head>
+  <body onload="begin()">
+    <div>
+      <button id="switch">Next colour</button>
+    </div>
+    <div>
+      Colour: <span id="colour-name"></span>
+    </div>
+    <div style="text-align: center;">
+      Regular
+      <div id="regular">
+        <svg
+          xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:cc="http://creativecommons.org/ns#"
+          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+          xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+          width="111.21398mm"
+          height="76.96183mm"
+          viewBox="0 0 88.971187 61.569463"
+          version="1.1"
+          id="svg8"
+          inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+          sodipodi:docname="64-24.svg"
+          inkscape:export-filename="/home/crawford/Projects/HSAC/HSAC Logos/64-24.png"
+          inkscape:export-xdpi="352.76599"
+          inkscape:export-ydpi="352.76599">
+          <defs
+            id="defs2" />
+          <sodipodi:namedview
+            id="base"
+            pagecolor="#ffffff"
+            bordercolor="#666666"
+            borderopacity="1.0"
+            inkscape:pageopacity="0.0"
+            inkscape:pageshadow="2"
+            inkscape:zoom="1.3463837"
+            inkscape:cx="193.61801"
+            inkscape:cy="20.427573"
+            inkscape:document-units="mm"
+            inkscape:current-layer="layer1"
+            showgrid="false"
+            scale-x="0.8"
+            objecttolerance="1"
+            inkscape:window-width="1856"
+            inkscape:window-height="1019"
+            inkscape:window-x="64"
+            inkscape:window-y="24"
+            inkscape:window-maximized="1"
+            fit-margin-top="0"
+            fit-margin-left="0"
+            fit-margin-right="0"
+            fit-margin-bottom="0" />
+          <metadata
+            id="metadata5">
+            <rdf:RDF>
+              <cc:Work
+                rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type
+                  rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                <dc:title></dc:title>
+              </cc:Work>
+            </rdf:RDF>
+          </metadata>
+          <g
+            inkscape:label="Layer 1"
+            inkscape:groupmode="layer"
+            id="layer1"
+            transform="translate(-55.472483,-31.202909)">
+            <text
+              inkscape:export-ydpi="1000"
+              inkscape:export-xdpi="1000"
+              transform="scale(0.91149492,1.0970988)"
+              id="text1147"
+              y="73.565361"
+              x="109.66389"
+              style="font-style:normal;font-weight:normal;font-size:12.06358433px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#3ddad7;fill-opacity:1;stroke:none;stroke-width:0.30158967px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+              xml:space="preserve"
+              inkscape:export-filename="/home/crawford/Documents/Diving/Logos/col_no_bg.png"><tspan
+                                                                                               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Aclonica;-inkscape-font-specification:'Aclonica Bold';fill:#3ddad7;fill-opacity:1;stroke-width:0.30158967px"
+                                                                                               y="73.565361"
+                                                                                               x="109.66389"
+                                                                                               id="tspan1145"
+                                                                                               sodipodi:role="line">Sub-Aqua Club</tspan></text>
+            <g
+              id="g2163"
+              transform="translate(-2.8391697)">
+              <path
+                inkscape:export-filename="/home/crawford/Documents/Diving/Logos/col_no_bg.png"
+                inkscape:export-ydpi="1000"
+                inkscape:export-xdpi="1000"
+                sodipodi:nodetypes="ccccscsccccccscccccccscscccccsccccc"
+                id="path6470-0"
+                d="m 141.38496,44.047081 -0.12889,8.876078 c -0.0252,8.925578 -0.0551,12.095128 -0.11631,12.265415 -0.12867,0.358038 -0.4246,0.598962 -1.92901,1.570595 -1.25888,0.813059 -1.42932,0.904794 -1.68261,0.904794 -0.31871,0 -0.34929,-0.05122 -0.12998,-0.218568 0.24492,-0.186829 0.55541,-0.580553 0.55541,-0.704279 0,-0.213194 -0.21907,-0.204882 -0.43259,0.01679 -0.19985,0.20698 -0.28163,0.160798 -0.11696,-0.06592 0.0712,-0.09803 0.0668,-0.137077 -0.0245,-0.215713 -0.10155,-0.08733 -0.12997,-0.08313 -0.31684,0.04702 -0.11284,0.07851 -0.29276,0.175493 -0.39974,0.215231 -0.28386,0.105589 -0.26249,0.304781 0.0354,0.329468 0.17533,0.01469 0.22985,0.04786 0.22985,0.140646 0,0.09509 -0.0768,0.138127 -0.3536,0.197954 -0.53529,0.115665 -2.34927,0.210591 -2.52032,0.131829 -0.17533,-0.08082 -0.13757,-0.194385 0.0792,-0.238384 0.17945,-0.03653 0.34484,-0.21162 0.26479,-0.280432 -0.0273,-0.02372 -0.18552,-0.06445 -0.35111,-0.0909 -0.16578,-0.02645 -0.38433,-0.06549 -0.48579,-0.08691 -0.22196,-0.04702 -0.32548,0.10223 -0.166,0.239224 0.1009,0.08691 0.14018,0.21882 0.0653,0.21882 -0.0217,0 -0.11609,-0.04387 -0.21157,-0.09761 -0.1916,-0.107688 -0.38702,-0.07704 -0.38702,0.0613 0,0.132878 0.48363,0.449731 0.88121,0.577361 0.30891,0.09908 0.38611,0.162478 0.64587,0.529039 0.6029,0.850845 1.21596,1.311408 2.06521,1.551492 0.49879,0.140856 1.75871,0.125952 2.31273,-0.0275 0.38997,-0.108109 1.36064,-0.713495 3.06782,-1.913498 1.1056,-0.777142 1.56827,-1.208568 1.8768,-1.750244 0.34102,-0.598627 0.37613,-0.846142 0.43135,-3.03707 0.0471,-1.868113 0.0412,-2.073204 -0.0629,-2.147474 -0.10546,-0.07536 -0.11544,-0.923812 -0.11631,-10.1501 l -0.0594,-6.847713 z"
+                style="fill:#135589;fill-opacity:1;stroke-width:0.06556491"
+                inkscape:connector-curvature="0" />
+              <ellipse
+                inkscape:export-filename="/home/crawford/Documents/Diving/Logos/col_no_bg.png"
+                ry="1.416972"
+                rx="1.4279422"
+                inkscape:export-ydpi="1000"
+                inkscape:export-xdpi="1000"
+                cy="32.619881"
+                cx="142.53275"
+                id="path6577-5"
+                style="fill:#6599ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.2844893;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+              <ellipse
+                inkscape:export-filename="/home/crawford/Documents/Diving/Logos/col_no_bg.png"
+                ry="1.0627289"
+                rx="1.0709566"
+                inkscape:export-ydpi="1000"
+                inkscape:export-xdpi="1000"
+                cy="37.616783"
+                cx="142.53275"
+                id="path6577-7-8"
+                style="fill:#6599ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.21336697;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+              <ellipse
+                inkscape:export-filename="/home/crawford/Documents/Diving/Logos/col_no_bg.png"
+                ry="0.70848602"
+                rx="0.71397108"
+                inkscape:export-ydpi="1000"
+                inkscape:export-xdpi="1000"
+                cy="42.613674"
+                cx="142.53275"
+                id="path6577-7-9-6"
+                style="fill:#6599ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.14224465;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+              <path
+                inkscape:export-filename="/home/crawford/Documents/Diving/Logos/col_no_bg.png"
+                inkscape:export-ydpi="1000"
+                inkscape:export-xdpi="1000"
+                sodipodi:nodetypes="sscccccccccccccccccccccccccccszsscscccscccsssccccc"
+                inkscape:connector-curvature="0"
+                id="path6458-75"
+                d="m 134.83855,56.30393 c -0.53668,2.73e-4 -1.18266,0.03233 -1.61993,0.159539 -1.7935,0.52188 -2.66965,1.224186 -3.02139,2.84535 l -0.0874,0.40229 -0.21373,0.01259 c -0.11739,0.0063 -0.23511,0.03359 -0.26108,0.05878 -0.0684,0.06612 -0.0679,1.841643 4.1e-4,1.907746 0.0263,0.02519 0.17554,0.05164 0.3318,0.05878 l 0.2841,0.0126 0.1226,0.328607 c 0.33451,0.895747 1.06461,1.677045 1.84481,1.974102 0.10329,0.03926 0.29344,0.0995 0.4225,0.133509 0.32995,0.08733 1.09614,0.05605 1.47585,-0.06025 0.15731,-0.04807 0.43007,-0.166886 0.6062,-0.263785 l 0.32025,-0.176332 0.75898,-0.0014 0.75892,0.0014 0.32025,0.176332 c 0.1762,0.09698 0.44893,0.215629 0.6062,0.263785 0.37971,0.116295 1.1459,0.147573 1.47585,0.06025 0.12911,-0.03422 0.31919,-0.09425 0.42252,-0.133509 0.78018,-0.297057 1.51028,-1.078355 1.84482,-1.974102 l 0.12259,-0.328607 0.28409,-0.0126 c 0.15601,-0.0063 0.30558,-0.03338 0.33179,-0.05878 0.0686,-0.06612 0.069,-1.841663 4.4e-4,-1.907746 -0.026,-0.02498 -0.14343,-0.05143 -0.26106,-0.05878 l -0.21374,-0.01259 -0.0872,-0.40229 c -0.35178,-1.621164 -1.22787,-2.32347 -3.02136,-2.84535 -0.87451,-0.254464 -2.00253,-0.173603 -2.58898,-0.162898 -0.58645,0.0084 -0.42239,0.0021 -0.95907,0.0021 z m 0.96408,0.816019 c 0.75212,0.0084 2.78461,-0.229714 3.86545,0.713138 0.28054,0.244724 0.67249,0.585717 0.82124,0.914891 0.25941,0.574066 0.32379,0.855568 0.34258,1.497291 0.0217,0.704342 -0.0523,1.09729 -0.31329,1.687604 -0.31264,0.70726 -0.85624,1.23126 -1.51389,1.459317 -0.31361,0.108528 -0.92081,0.134348 -1.25651,0.0529 -0.98446,-0.372208 -1.0014,-1.94698 -1.29681,-2.922118 -0.0966,-0.309547 -0.37274,-0.598459 -0.64877,-0.59848 -0.27606,0 -0.55226,0.288933 -0.64882,0.59848 -0.29541,0.975138 -0.31238,2.54991 -1.29681,2.922118 -0.33573,0.08145 -0.9429,0.05605 -1.25656,-0.0529 -0.65765,-0.228057 -1.20123,-0.752057 -1.51388,-1.459317 -0.26095,-0.590314 -0.33391,-0.983262 -0.31329,-1.687604 0.0195,-0.641723 0.0833,-0.923225 0.34258,-1.497291 0.14864,-0.329174 0.54069,-0.670167 0.82128,-0.914891 1.13361,-0.849207 3.47489,-0.717903 3.8655,-0.713138 z"
+                style="fill:#135589;fill-opacity:1;stroke:none;stroke-width:0.03961935;stroke-opacity:1" />
+              <text
+                inkscape:export-ydpi="1000"
+                inkscape:export-xdpi="1000"
+                inkscape:export-filename="/home/crawford/Documents/Diving/Logos/col_no_bg.png"
+                transform="scale(0.88285299,1.1326914)"
+                id="text982"
+                y="61.225254"
+                x="107.41241"
+                style="font-style:normal;font-weight:normal;font-size:18.74780846px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#2a93d5;fill-opacity:1;stroke:none;stroke-width:0.46869519px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                xml:space="preserve"><tspan
+                                       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Aclonica;-inkscape-font-specification:Aclonica;fill:#2a93d5;fill-opacity:1;stroke:none;stroke-width:0.46869519px;stroke-opacity:1"
+                                       y="61.225254"
+                                       x="107.41241"
+                                       id="tspan980"
+                                       sodipodi:role="line">Hartfor</tspan></text>
+            </g>
+            <flowRoot
+              xml:space="preserve"
+              id="flowRoot1811"
+              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:125%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+              transform="scale(0.26458333)"><flowRegion
+                                              id="flowRegion1813"><rect
+                                                                    id="rect1815"
+                                                                    width="222.20982"
+                                                                    height="37.034969"
+                                                                    x="281.15714"
+                                                                    y="609.89398" /></flowRegion><flowPara
+                                                                                                   id="flowPara1817" /></flowRoot>    <g
+                                                                                                                                        id="g2855"
+                                                                                                                                        transform="translate(0.29875983)">
+              <path
+                inkscape:connector-curvature="0"
+                id="path2004"
+                d="m 113.54995,84.802578 c -0.15606,0.0011 -0.31675,0.02014 -0.48162,0.05899 -1.24651,0.293771 -2.04201,1.614364 -2.13211,3.539279 -0.0915,1.954556 0.58552,3.565929 1.75012,4.164884 0.95588,0.491608 2.15048,0.08044 2.79328,-0.961426 1.69752,-2.75138 0.41128,-6.816574 -1.92967,-6.801728 z m 0.0167,1.187034 c 0.44038,-0.01056 0.86746,0.32654 1.15204,0.965124 0.2207,0.495224 0.26896,0.806247 0.27026,1.739219 0.002,1.300889 -0.23994,2.178205 -0.71233,2.586543 -0.3967,0.342913 -1.05978,0.334234 -1.40413,-0.01832 -1.012,-1.036088 -1.00613,-4.023837 0.01,-4.963203 0.21945,-0.202915 0.45372,-0.30385 0.6844,-0.30938 z"
+                style="fill:#135589;fill-opacity:1;stroke-width:0.12042682" />
+              <path
+                sodipodi:nodetypes="cccccccc"
+                inkscape:connector-curvature="0"
+                id="path1986"
+                d="M 73.215451,86.207778 H 71.61294 l 0.95939,-1.26242 h 1.906795 v 7.827012 h -0.631837 -0.631837 z"
+                style="fill:#135589;fill-opacity:1;stroke-width:0.12042682" />
+              <path
+                sodipodi:nodetypes="ccsccccssccccc"
+                inkscape:connector-curvature="0"
+                id="path1984"
+                d="m 105.19426,92.546113 c 0.0826,-0.124443 0.77297,-1.075993 1.53425,-2.114559 1.79131,-2.443758 1.85025,-2.467344 1.85025,-3.113927 0,-0.439253 -0.11918,-0.644524 -0.41101,-0.86707 -1.07487,-0.712411 -1.55069,-0.07274 -2.01022,0.862708 l -0.9738,-0.01445 c 0,-0.812425 0.94338,-2.133558 1.82142,-2.340496 1.47418,-0.347417 2.76208,0.763914 2.76208,2.383423 0,0.896636 -0.17287,1.268254 -1.29294,2.779543 l -0.98241,1.397495 h 2.27535 v 1.253592 h -4.60743 c -0.0143,-0.08165 0.008,-0.158547 0.0345,-0.226252 z"
+                style="fill:#135589;fill-opacity:1;stroke-width:0.12042682" />
+              <path
+                sodipodi:nodetypes="ccccccccccccscccc"
+                inkscape:connector-curvature="0"
+                id="path1976"
+                d="m 79.630505,84.906947 c -0.251056,-0.0084 -0.51083,0.02583 -0.773754,0.109845 -2.260735,0.722215 -2.436739,3.600168 -0.353358,4.777803 0.280312,0.15565 0.5825,0.24436 0.927384,0.318811 l -1.372328,2.075348 1.157413,0.583616 1.206235,-1.714256 c 0.663427,-0.942848 1.418937,-2.239756 1.525987,-2.457384 0.901461,-1.832498 -0.560242,-3.635065 -2.317579,-3.693775 z m -0.07927,1.216436 c 0.04066,0.0019 0.08206,0.0058 0.124027,0.01186 0.654192,0.09426 1.33146,0.421802 1.33146,1.127387 0,0.595331 -0.234753,1.159141 -0.599413,1.439821 -0.40842,0.314369 -1.160266,0.253133 -1.57241,-0.127966 -1.034511,-0.956587 -0.54411,-2.509175 0.716336,-2.451077 z"
+                style="fill:#135589;fill-opacity:1;stroke-width:0.12042682" />
+              <path
+                sodipodi:nodetypes="ccccccccccccscccc"
+                inkscape:connector-curvature="0"
+                id="path1976-1"
+                d="m 85.109938,92.771145 c 0.251053,0.0084 0.510833,-0.02583 0.773757,-0.109845 2.260733,-0.722218 2.561796,-3.94756 0.478414,-5.125198 -0.280311,-0.155646 -0.582496,-0.244359 -0.927381,-0.31881 l 1.469593,-2.311568 h -1.379737 l -1.206237,1.714251 c -0.663428,0.942848 -1.293873,1.892365 -1.400928,2.109996 -0.901461,1.832495 0.435185,3.982456 2.192519,4.041166 z m 0.07927,-1.216439 c -0.04066,-0.0019 -0.08206,-0.0058 -0.124027,-0.01183 -0.654196,-0.09426 -1.206399,-0.769197 -1.206399,-1.474778 0,-0.595335 0.234754,-1.159145 0.599413,-1.439824 0.40842,-0.314366 1.160269,-0.253131 1.572411,0.127965 1.034508,0.95659 0.419044,2.856567 -0.841398,2.798471 z"
+                style="fill:#135589;fill-opacity:1;stroke-width:0.12042682" />
+              <path
+                sodipodi:nodetypes="ccsccccssccccc"
+                inkscape:connector-curvature="0"
+                id="path1984-9"
+                d="m 116.98503,92.546113 c 0.0826,-0.12444 0.77297,-1.075993 1.53425,-2.114559 1.79131,-2.443758 1.85025,-2.467344 1.85025,-3.113927 0,-0.439253 -0.11918,-0.644524 -0.41101,-0.86707 -1.07487,-0.712411 -1.55069,-0.07274 -2.01022,0.862708 l -0.9738,-0.01445 c 0,-0.812425 0.94338,-2.133558 1.82142,-2.340496 1.47418,-0.347417 2.76208,0.763914 2.76208,2.383423 0,0.896636 -0.17287,1.268254 -1.29294,2.779543 l -0.98241,1.397495 h 2.27535 v 1.253592 h -4.60743 c -0.0143,-0.08165 0.008,-0.158547 0.0345,-0.226249 z"
+                style="fill:#135589;fill-opacity:1;stroke-width:0.12042682" />
+              <path
+                sodipodi:nodetypes="cccccccccccccccc"
+                inkscape:connector-curvature="0"
+                id="path1982-2"
+                d="m 125.75263,84.85465 -3.23862,5.266474 -0.0149,1.234667 3.25352,0.02779 v 1.388786 h 1.14885 v -1.388786 h 0.80421 v -1.262299 h -0.80421 v -5.280531 z m 0,2.649026 v 2.617448 h -1.6437 z"
+                style="fill:#135589;fill-opacity:1;stroke-width:0.12042682" />
+              <path
+                sodipodi:nodetypes="ccccc"
+                inkscape:connector-curvature="0"
+                id="path2135"
+                d="m 98.157199,90.45689 v -1.106614 h 2.489881 v 1.106614 z"
+                style="fill:#135589;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.05602544px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+              <path
+                style="fill:#135589;fill-opacity:1;stroke-width:0.12042682"
+                d="m 91.834501,84.818516 -3.23863,5.266474 -0.0149,1.234667 3.25352,0.02779 v 1.388787 h 1.14885 v -1.388787 h 0.80421 v -1.262296 h -0.80421 V 84.80462 Z m 0,2.649026 v 2.617448 h -1.64371 z"
+                id="path1982-2-3"
+                inkscape:connector-curvature="0"
+                sodipodi:nodetypes="cccccccccccccccc" />
+            </g>
+          </g>
+        </svg>
+      </div>
+      Inverse
+      <div id="inverse">
+        <svg
+          xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:cc="http://creativecommons.org/ns#"
+          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+          xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+          width="111.21398mm"
+          height="76.961891mm"
+          viewBox="0 0 111.21398 76.961891"
+          version="1.1"
+          id="svg3396"
+          inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+          sodipodi:docname="64-24 inverse.svg">
+          <defs
+            id="defs3390" />
+          <sodipodi:namedview
+            id="base"
+            pagecolor="#ffffff"
+            bordercolor="#666666"
+            borderopacity="1.0"
+            inkscape:pageopacity="0.0"
+            inkscape:pageshadow="2"
+            inkscape:zoom="1.1634766"
+            inkscape:cx="80.720456"
+            inkscape:cy="2.374589"
+            inkscape:document-units="mm"
+            inkscape:current-layer="layer1"
+            showgrid="false"
+            fit-margin-top="0"
+            fit-margin-left="0"
+            fit-margin-right="0"
+            fit-margin-bottom="0"
+            inkscape:window-width="1856"
+            inkscape:window-height="1019"
+            inkscape:window-x="64"
+            inkscape:window-y="24"
+            inkscape:window-maximized="1" />
+          <metadata
+            id="metadata3393">
+            <rdf:RDF>
+              <cc:Work
+                rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type
+                  rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                <dc:title></dc:title>
+              </cc:Work>
+            </rdf:RDF>
+          </metadata>
+          <g
+            inkscape:label="Layer 1"
+            inkscape:groupmode="layer"
+            id="layer1"
+            transform="translate(-35.356019,-72.49972)">
+            <text
+              inkscape:export-ydpi="1000"
+              inkscape:export-xdpi="1000"
+              transform="scale(0.91149493,1.0970988)"
+              id="text1147-7"
+              y="122.48821"
+              x="99.79541"
+              style="font-style:normal;font-weight:normal;font-size:15.07948017px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#252800;fill-opacity:1;stroke:none;stroke-width:0.37698707px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+              xml:space="preserve"
+              inkscape:export-filename="/home/crawford/Documents/Diving/Logos/col_no_bg.png"><tspan
+                                                                                               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Aclonica;-inkscape-font-specification:'Aclonica Bold';fill:#252800;fill-opacity:1;stroke-width:0.37698707px"
+                                                                                               y="122.48821"
+                                                                                               x="99.79541"
+                                                                                               id="tspan1145-2"
+                                                                                               sodipodi:role="line">Sub-Aqua Club</tspan></text>
+            <path
+              inkscape:connector-curvature="0"
+              style="fill:#aa7600;fill-opacity:1;stroke-width:0.08195613"
+              d="m 139.19765,88.554935 -0.16111,11.095101 c -0.0315,11.156974 -0.0689,15.118914 -0.14539,15.331764 -0.16084,0.44755 -0.53075,0.7487 -2.41126,1.96325 -1.57361,1.01632 -1.78665,1.13098 -2.10327,1.13098 -0.39839,0 -0.43661,-0.064 -0.16247,-0.27321 0.30615,-0.23353 0.69426,-0.72569 0.69426,-0.88035 0,-0.26648 -0.27384,-0.2561 -0.54074,0.021 -0.24981,0.25873 -0.35203,0.201 -0.1462,-0.0824 0.089,-0.1225 0.0835,-0.17133 -0.0306,-0.26964 -0.12693,-0.10912 -0.16246,-0.10387 -0.39605,0.0588 -0.14105,0.0981 -0.36595,0.21937 -0.49967,0.26904 -0.35483,0.13199 -0.32811,0.38098 0.0443,0.41184 0.21916,0.0184 0.28731,0.0599 0.28731,0.17581 0,0.11888 -0.096,0.17265 -0.442,0.24744 -0.66911,0.14459 -2.93659,0.26324 -3.1504,0.16479 -0.21916,-0.101 -0.17196,-0.24299 0.099,-0.29798 0.22431,-0.0456 0.43105,-0.26452 0.33099,-0.35055 -0.0341,-0.0296 -0.2319,-0.0805 -0.43889,-0.11362 -0.20722,-0.0331 -0.48041,-0.0819 -0.60724,-0.10863 -0.27745,-0.0588 -0.40685,0.12779 -0.2075,0.29904 0.12613,0.10862 0.17523,0.27352 0.0816,0.27352 -0.0271,0 -0.14511,-0.0549 -0.26446,-0.122 -0.2395,-0.13461 -0.48377,-0.0962 -0.48377,0.0766 0,0.1661 0.60453,0.56217 1.10151,0.7217 0.38614,0.12388 0.48264,0.2031 0.80734,0.6613 0.75362,1.06355 1.51995,1.63926 2.58151,1.93937 0.62349,0.17607 2.19839,0.15743 2.89091,-0.0344 0.48746,-0.13514 1.7008,-0.89188 3.83478,-2.39188 1.382,-0.97143 1.96033,-1.51071 2.346,-2.1878 0.42627,-0.74829 0.47016,-1.05767 0.53918,-3.79634 0.0589,-2.33515 0.0515,-2.59151 -0.0786,-2.68435 -0.13183,-0.0943 -0.1443,-1.15476 -0.14539,-12.687622 l -0.0743,-8.559646 z"
+              id="path6470-0-1"
+              sodipodi:nodetypes="ccccscsccccccscccccccscscccccsccccc"
+              inkscape:export-xdpi="1000"
+              inkscape:export-ydpi="1000"
+              inkscape:export-filename="/home/crawford/Documents/Diving/Logos/col_no_bg.png" />
+            <ellipse
+              style="fill:#660000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35561162;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+              id="path6577-5-6"
+              cx="140.63239"
+              cy="74.270935"
+              inkscape:export-xdpi="1000"
+              inkscape:export-ydpi="1000"
+              rx="1.7849277"
+              ry="1.771215"
+              inkscape:export-filename="/home/crawford/Documents/Diving/Logos/col_no_bg.png" />
+            <ellipse
+              style="fill:#660000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.2667087;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+              id="path6577-7-8-5"
+              cx="140.63239"
+              cy="80.517059"
+              inkscape:export-xdpi="1000"
+              inkscape:export-ydpi="1000"
+              rx="1.3386958"
+              ry="1.3284111"
+              inkscape:export-filename="/home/crawford/Documents/Diving/Logos/col_no_bg.png" />
+            <ellipse
+              style="fill:#660000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.17780581;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+              id="path6577-7-9-6-7"
+              cx="140.63239"
+              cy="86.763176"
+              inkscape:export-xdpi="1000"
+              inkscape:export-ydpi="1000"
+              rx="0.89246386"
+              ry="0.88560748"
+              inkscape:export-filename="/home/crawford/Documents/Diving/Logos/col_no_bg.png" />
+            <path
+              style="fill:#aa7600;fill-opacity:1;stroke:none;stroke-width:0.04952419;stroke-opacity:1"
+              d="m 131.01464,103.876 c -0.67085,2.6e-4 -1.47833,0.0404 -2.02492,0.19942 -2.24187,0.65235 -3.33706,1.53023 -3.77673,3.55669 l -0.10925,0.50286 -0.26717,0.0157 c -0.14673,0.007 -0.29389,0.042 -0.32635,0.0735 -0.0855,0.0826 -0.0849,2.30205 5.3e-4,2.38467 0.0329,0.0315 0.21943,0.0645 0.41475,0.0735 l 0.35513,0.0157 0.15325,0.41077 c 0.41814,1.11969 1.33076,2.09631 2.30601,2.46762 0.12911,0.0491 0.3668,0.12438 0.52812,0.16689 0.41244,0.10913 1.37018,0.07 1.84482,-0.0752 0.19663,-0.0601 0.53758,-0.2086 0.75775,-0.32972 l 0.40031,-0.22043 0.94873,-0.001 0.94864,0.001 0.40032,0.22043 c 0.22025,0.12125 0.56116,0.26953 0.75775,0.32972 0.47463,0.14537 1.43237,0.18446 1.84481,0.0752 0.16139,-0.0427 0.39899,-0.11775 0.52815,-0.16689 0.97522,-0.37131 1.88785,-1.34793 2.30603,-2.46762 l 0.15323,-0.41077 0.35512,-0.0157 c 0.19501,-0.007 0.38197,-0.0417 0.41473,-0.0735 0.0858,-0.0826 0.0863,-2.30207 5.3e-4,-2.38467 -0.0325,-0.0312 -0.17929,-0.0643 -0.32633,-0.0735 l -0.26717,-0.0157 -0.109,-0.50286 c -0.43972,-2.02646 -1.53484,-2.90434 -3.7767,-3.55669 -1.09314,-0.31809 -2.50316,-0.21701 -3.23622,-0.20362 -0.73307,0.01 -0.52799,0.002 -1.19884,0.002 z m 1.20509,1.02002 c 0.94016,0.01 3.48077,-0.28715 4.83182,0.89143 0.35067,0.3059 0.84061,0.73213 1.02655,1.14361 0.32426,0.71758 0.40474,1.06945 0.42822,1.87161 0.0271,0.88043 -0.0654,1.37161 -0.39161,2.1095 -0.3908,0.88408 -1.0703,1.53908 -1.89236,1.82415 -0.39201,0.13566 -1.15101,0.16794 -1.57064,0.0661 -1.23057,-0.46526 -1.25175,-2.43372 -1.62101,-3.65265 -0.12075,-0.38694 -0.46593,-0.74807 -0.81097,-0.7481 -0.34507,0 -0.69032,0.36116 -0.81102,0.7481 -0.36926,1.21893 -0.39047,3.18739 -1.62101,3.65265 -0.41966,0.10175 -1.17863,0.07 -1.5707,-0.0661 -0.82206,-0.28507 -1.50154,-0.94007 -1.89235,-1.82415 -0.32619,-0.73789 -0.41739,-1.22907 -0.39161,-2.1095 0.0244,-0.80216 0.10412,-1.15403 0.42822,-1.87161 0.1858,-0.41148 0.67586,-0.83771 1.0266,-1.14361 1.41701,-1.06152 4.34361,-0.89739 4.83187,-0.89143 z"
+              id="path6458-75-8"
+              inkscape:connector-curvature="0"
+              sodipodi:nodetypes="sscccccccccccccccccccccccccccszsscscccscccsssccccc"
+              inkscape:export-xdpi="1000"
+              inkscape:export-ydpi="1000"
+              inkscape:export-filename="/home/crawford/Documents/Diving/Logos/col_no_bg.png" />
+            <text
+              xml:space="preserve"
+              style="font-style:normal;font-weight:normal;font-size:23.43476105px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#6c2a00;fill-opacity:1;stroke:none;stroke-width:0.58586901px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+              x="91.751564"
+              y="106.10368"
+              id="text982-5"
+              transform="scale(0.88285299,1.1326914)"
+              inkscape:export-filename="/home/crawford/Documents/Diving/Logos/col_no_bg.png"
+              inkscape:export-xdpi="1000"
+              inkscape:export-ydpi="1000"><tspan
+                                            sodipodi:role="line"
+                                            id="tspan980-9"
+                                            x="91.751564"
+                                            y="106.10368"
+                                            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Aclonica;-inkscape-font-specification:Aclonica;fill:#6c2a00;fill-opacity:1;stroke:none;stroke-width:0.58586901px;stroke-opacity:1">Hartfor</tspan></text>
+            <path
+              style="fill:#aa7600;fill-opacity:1;stroke-width:0.15053353"
+              d="m 108.3263,139.49931 c -0.19508,0.001 -0.39594,0.0251 -0.60203,0.0737 -1.55814,0.36721 -2.55251,2.01795 -2.66513,4.4241 -0.11438,2.44319 0.73189,4.4574 2.18765,5.2061 1.19485,0.61451 2.6881,0.1005 3.4916,-1.20179 2.1219,-3.43922 0.51409,-8.52071 -2.41209,-8.50215 z m 0.0209,1.48379 c 0.55047,-0.0133 1.08432,0.40817 1.44005,1.2064 0.27587,0.61904 0.3362,1.00781 0.33782,2.17402 0.002,1.62612 -0.29992,2.72276 -0.89041,3.23319 -0.49588,0.42864 -1.32472,0.41779 -1.75516,-0.0229 -1.265,-1.29511 -1.25766,-5.0298 0.0125,-6.20401 0.27431,-0.25364 0.56715,-0.37981 0.8555,-0.38673 z"
+              id="path2004-7"
+              inkscape:connector-curvature="0" />
+            <path
+              style="fill:#aa7600;fill-opacity:1;stroke-width:0.15053353"
+              d="m 57.908174,141.25581 h -2.003138 l 1.199237,-1.57803 h 2.383494 v 9.78377 h -0.789796 -0.789797 z"
+              id="path1986-3"
+              inkscape:connector-curvature="0"
+              sodipodi:nodetypes="cccccccc" />
+            <path
+              style="fill:#aa7600;fill-opacity:1;stroke-width:0.15053353"
+              d="m 97.881686,149.17872 c 0.103248,-0.15555 0.96621,-1.34499 1.917811,-2.6432 2.239133,-3.0547 2.312813,-3.08417 2.312813,-3.8924 0,-0.54907 -0.14897,-0.80566 -0.51376,-1.08383 -1.34359,-0.89053 -1.938364,-0.0909 -2.512777,1.07837 l -1.21725,-0.0181 c 0,-1.01553 1.179224,-2.66694 2.276777,-2.92561 1.84272,-0.43428 3.4526,0.95488 3.4526,2.97927 0,1.1208 -0.21609,1.58531 -1.61618,3.47443 l -1.22801,1.74687 h 2.84419 v 1.56699 h -5.759291 c -0.01789,-0.102 0.01,-0.19819 0.04313,-0.28282 z"
+              id="path1984-6"
+              inkscape:connector-curvature="0"
+              sodipodi:nodetypes="ccsccccssccccc" />
+            <path
+              style="fill:#aa7600;fill-opacity:1;stroke-width:0.15053353"
+              d="m 65.926991,139.62977 c -0.31382,-0.01 -0.638538,0.0323 -0.967193,0.1373 -2.825916,0.90278 -3.045923,4.50022 -0.441695,5.97225 0.35039,0.19457 0.728123,0.30545 1.159229,0.39853 l -1.71541,2.59417 1.446766,0.72953 1.507794,-2.14283 c 0.829284,-1.17855 1.773671,-2.79969 1.907485,-3.07172 1.126826,-2.29063 -0.700305,-4.54384 -2.896976,-4.61723 z m -0.09909,1.52054 c 0.05083,0.002 0.102577,0.008 0.155035,0.0149 0.81774,0.11788 1.664325,0.52725 1.664325,1.40924 0,0.74416 -0.293442,1.44892 -0.749266,1.79977 -0.510526,0.39297 -1.450334,0.31641 -1.965513,-0.15996 -1.29314,-1.19572 -0.680137,-3.13646 0.895419,-3.06384 z"
+              id="path1976-4"
+              inkscape:connector-curvature="0"
+              sodipodi:nodetypes="ccccccccccccscccc" />
+            <path
+              style="fill:#aa7600;fill-opacity:1;stroke-width:0.15053353"
+              d="m 72.776283,149.46001 c 0.313817,0.01 0.63854,-0.0323 0.967198,-0.1373 2.825914,-0.90278 3.202244,-4.93445 0.598016,-6.4065 -0.35039,-0.19456 -0.72812,-0.30545 -1.159227,-0.39851 l 1.836992,-2.88946 h -1.724671 l -1.507797,2.14281 c -0.829286,1.17856 -1.617342,2.36546 -1.75116,2.6375 -1.126826,2.29061 0.543981,4.97807 2.740649,5.05146 z m 0.09909,-1.52055 c -0.05082,-0.002 -0.102574,-0.007 -0.155033,-0.0147 -0.817745,-0.11788 -1.507998,-0.96149 -1.507998,-1.84346 0,-0.74418 0.293442,-1.44894 0.749266,-1.79979 0.510524,-0.39295 1.450337,-0.31641 1.965513,0.15996 1.293135,1.19574 0.523806,3.5707 -1.051748,3.49809 z"
+              id="path1976-1-7"
+              inkscape:connector-curvature="0"
+              sodipodi:nodetypes="ccccccccccccscccc" />
+            <path
+              style="fill:#aa7600;fill-opacity:1;stroke-width:0.15053353"
+              d="m 112.62015,149.17872 c 0.10325,-0.15555 0.96621,-1.34499 1.91781,-2.6432 2.23914,-3.0547 2.31281,-3.08417 2.31281,-3.8924 0,-0.54907 -0.14897,-0.80566 -0.51376,-1.08383 -1.34359,-0.89053 -1.93836,-0.0909 -2.51278,1.07837 l -1.21725,-0.0181 c 0,-1.01553 1.17923,-2.66694 2.27678,-2.92561 1.84273,-0.43428 3.4526,0.95488 3.4526,2.97927 0,1.1208 -0.21609,1.58531 -1.61617,3.47443 l -1.22802,1.74687 h 2.84419 v 1.56699 h -5.75929 c -0.0179,-0.102 0.01,-0.19819 0.0431,-0.28281 z"
+              id="path1984-9-9"
+              inkscape:connector-curvature="0"
+              sodipodi:nodetypes="ccsccccssccccc" />
+            <path
+              style="fill:#aa7600;fill-opacity:1;stroke-width:0.15053353"
+              d="m 123.57965,139.5644 -4.04828,6.58308 -0.0186,1.54334 4.06691,0.0348 v 1.73599 h 1.43606 v -1.73599 h 1.00526 v -1.57787 h -1.00526 v -6.60067 z m 0,3.31127 v 3.27181 h -2.05463 z"
+              id="path1982-2-7"
+              inkscape:connector-curvature="0"
+              sodipodi:nodetypes="cccccccccccccccc" />
+            <path
+              style="fill:#aa7600;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.0700318px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+              d="m 89.085359,146.5672 v -1.38328 h 3.112352 v 1.38328 z"
+              id="path2135-2"
+              inkscape:connector-curvature="0"
+              sodipodi:nodetypes="ccccc" />
+            <path
+              sodipodi:nodetypes="cccccccccccccccc"
+              inkscape:connector-curvature="0"
+              id="path1982-2-3-2"
+              d="m 81.181987,139.51922 -4.048286,6.5831 -0.01863,1.54334 4.0669,0.0348 v 1.73597 h 1.436063 v -1.73597 h 1.005263 v -1.57788 h -1.005263 v -6.60066 z m 0,3.31129 v 3.27181 H 79.12735 Z"
+              style="fill:#aa7600;fill-opacity:1;stroke-width:0.15053353" />
+          </g>
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
