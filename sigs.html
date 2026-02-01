@@ -75,7 +75,7 @@
     <div class="data-row">
       Enter your details and use &#x21e6; and &#x21e8; to pick a signature. Then use "Copy to clipboard" to copy the HTML for pasting into your mail tool.
     </div>
-    <div style="display:table; border-spacing:0.5em;">
+    <div style="display:table;border-spacing:0.5em;">
       <div style="display:table-row">
         <div style="display:table-cell">
           <label for="forename">First name</label>
@@ -87,14 +87,14 @@
           <input type="text" class="field" id="surname" value="Cousteau"/>
         </div>
       </div>
-      <div style="display:table-row">
+      <div style="display:table-row;">
         <div style="display:table-cell">
           <label for="role">Role</label>
         </div><div style="display:table-cell">
           <input type="text" class="field" id="role" value="President"/>
         </div>
       </div>
-      <div style="display:table-row">
+      <div style="display:table-row;">
         <div style="display:table-cell">
           <label for="email">Email:</label>
         </div><div style="display:table-cell">
@@ -105,7 +105,7 @@
           <input type="tel" class="field" id="tel" value="07891 234567"/>
         </div>
       </div>
-      <div style="display:table-row">
+      <div style="display:table-row;">
         <div style="display:table-cell">
           <label for="address">Address</label>
         </div><div style="display:table-cell">
@@ -116,7 +116,7 @@
           <input type="text" class="field" id="postcode" value="CW8 4BG">
         </div>
       </div>
-      <div style="display:table-row">
+      <div style="display:table-row;">
         <div style="display:table-cell">
           <label for="business">Business</label>
         </div><div style="display:table-cell">
@@ -131,7 +131,7 @@
           <input type="url" class="field" id="logo" value="https://hartfordscuba.co.uk/wp-content/uploads/2018/05/cropped-logo-white-3.png"/>
         </div>
       </div>
-      <div style="display:table-row">
+      <div style="display:table-row;">
         <div style="display:table-cell">
           <label for="facebook">Facebook</label>
         </div><div style="display:table-cell">
@@ -142,12 +142,12 @@
           <input type="url" class="field" id="instagram" value="https://www.instagram.com/hartfordscuba/"/>
         </div>
         </div>
-        <div style="display:table-row">
+        <div style="display:table-row;">
           <div style="display:table-cell">
             <label for="disclaimer">Disclaimer</label>
           </div><div style="display:table-cell">
             <textarea class="field" id="disclaimer">
-The content of this email is confidential and intended for the recipients specified in message only. If you received this message by mistake, please reply to this message so that we can make sure we don't make the same mistake again.
+The content of this email is confidential and intended for the recipients specified in message only. If you received this message by mistake, please reply to this message so that we can make sure we avoid making the same mistake again.
             </textarea>
           </div>
         </div>
@@ -170,14 +170,13 @@ The content of this email is confidential and intended for the recipients specif
     </div>
 
     <div class="signature hidden" id="one">
-      <table cellspacing="0" cellpadding="0" border="0" style="COLOR: #000000; font-family: Arial, sans-serif; width:500px; background: transparent !important;">
-        <tbody>
-          <tr>
-            <td style="text-align: center;border: 2px solid #000000; text-align: center; width: 197px">
-              <a href="http://${website}" target="_blank" rel="noopener"><img style="width:177px; height:auto; border:0;" width="177" height="auto" border="0" src="${logo}"></a>
+      <div style="display:table;COLOR: #000000; font-family: Arial, sans-serif; width:500px; background: transparent !important;">
+          <div style="display:table-row;">
+            <div style="display:table-cell;text-align:center;border:2px solid #000000;width:197px;vertical-align:middle;">
+              <a href="http://${website}" target="_blank" rel="noopener"><img style="width:177px; height:auto; border:0;" width="177" height="auto" src="${logo}"></a>
 		      
-            </td>
-            <td style="border: 2px solid #000000; padding: 10px 10px 10px 24px; width: 303px;">
+            </div>
+            <div style="display:table-cell;border: 2px solid #000000; padding: 10px 10px 10px 24px; width: 303px;">
               <span style="font-size: 18pt; color: #000000">${forename} ${surname}<br>
               </span>
               <span style="font-size: 10pt; line-height: 16pt; color: #000000">${role}<span>, </span>
@@ -205,25 +204,24 @@ The content of this email is confidential and intended for the recipients specif
               <span style="font-family: Arial, sans-serif;font-size: 10pt; line-height: 16pt; color: #000000;vertical-align: top;">
                 <a href="http://${website}" target="_blank" rel="noopener" style=" text-decoration:none;"><strong style="color:#000000; font-family:Arial, sans-serif; font-size:10pt; line-height: 16pt;">${website}</strong></a>
               </span>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2" style="padding-top: 11px; text-align: right;">
-              <span>&nbsp;<a href="${facebook}" target="_blank" rel="noopener"><img border="0" width="19" height="19" alt="facebook icon" style="border:0; height:19px; width:19px" src="https://imgmsgen.com/img/logo-highlight/fb.png"></a>
+            </div>
+          </div>
+          <div style="display:table-row;">
+            <div style="display:table-cell;"></div>
+            <div style="display:table-cell;padding-top:11px;text-align:right;">
+              <span>&nbsp;<a href="${facebook}" target="_blank" rel="noopener"><img width="19" height="19" alt="facebook icon" style="border:0; height:19px; width:19px" src="https://imgmsgen.com/img/logo-highlight/fb.png"></a>
               </span>
-              <span>&nbsp;<a href="${instagram}" target="_blank" rel="noopener"><img border="0" width="19" height="19" alt="instagram icon" style="border:0; height:19px; width:19px" src="https://imgmsgen.com/img/logo-highlight/it.png"></a>
+              <span>&nbsp;<a href="${instagram}" target="_blank" rel="noopener"><img width="19" height="19" alt="instagram icon" style="border:0; height:19px; width:19px" src="https://imgmsgen.com/img/logo-highlight/it.png"></a>
               </span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+            </div>
+          </div>
+      </div>
     </div>
 
     <div class="signature hidden" id="two">
-      <table cellspacing="0" cellpadding="0" border="0" style="font-size: 9pt; FONT-FAMILY: Arial, sans-serif; COLOR: #464646;max-width:500px; background: transparent !important;">
-        <tbody>
-          <tr>
-            <td colspan="2" width="499" style="padding-bottom: 4px; border-bottom: 1px solid #4d68d5;">
+      <div style="display:table;font-size: 9pt; FONT-FAMILY: Arial, sans-serif; COLOR: #464646;max-width:500px; background: transparent !important;">
+          <div style="display:table-row;">
+            <div style="display:table-cell;" width="499" style="padding-bottom:4px;border-bottom: 1px solid #4d68d5;">
               <span style="FONT-SIZE: 18pt; COLOR: #4d68d5; FONT-FAMILY: Arial, sans-serif;">
                 <strong>${forename} ${surname}</strong>
               </span>
@@ -237,10 +235,10 @@ The content of this email is confidential and intended for the recipients specif
                   <span style="font-size: 10pt; color: #4d68d5 !important; text-decoration:none ; font-weight: bold;">${website}</span>
                 </a>
               </span>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding-top: 20px;">
+            </div>
+          </div>
+          <div style="display:table-row;">
+            <div style="display:table-cell;padding-top: 20px;">
               <span style="font-size: 9pt; line-height: 12px; color: #464646;">
                 <strong>&#9742: </strong>${tel}</span>
               <span style="font-size: 9pt; line-height: 12px; color: #464646;">
@@ -262,26 +260,22 @@ The content of this email is confidential and intended for the recipients specif
 			  
               <p style="margin-bottom: 0px; padding-bottom: 0px; padding-top: 0px; margin-top: 4px;">
                 <span>
-                  <a href="${facebook}" target="_blank" rel="noopener"><img border="0" width="20" alt="facebook icon" style="border:0; height:20px; width:20px" src="https://imgmsgen.com/img/virtual-assistant/fb.png"></a>&nbsp;</span>
+                  <a href="${facebook}" target="_blank" rel="noopener"><img width="20" alt="facebook icon" style="border:0; height:20px; width:20px" src="https://imgmsgen.com/img/virtual-assistant/fb.png"></a>&nbsp;</span>
                 <span>
-                  <a href="${instagram}" target="_blank" rel="noopener"><img border="0" width="20" alt="instagram icon" style="border:0; height:20px; width:20px" src="https://imgmsgen.com/img/virtual-assistant/it.png"></a>&nbsp;</span>
+                  <a href="${instagram}" target="_blank" rel="noopener"><img width="20" alt="instagram icon" style="border:0; height:20px; width:20px" src="https://imgmsgen.com/img/virtual-assistant/it.png"></a>&nbsp;</span>
               </p>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2" style="padding-top:10px;">
-              <p style="font-size:7pt; line-height:8pt; COLOR: #959595; FONT-FAMILY: Arial, sans-serif;  text-align:justify;">${disclaimer}</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+            </div>
+          </div>
+          <div style="padding-top:10px;">
+            <p style="font-size:7pt; line-height:8pt; COLOR: #959595; FONT-FAMILY: Arial, sans-serif;  text-align:justify;">${disclaimer}</p>
+          </div>
+      </div>
     </div>
 
     <div class="signature hidden" id="three">
-      <table cellspacing="0" cellpadding="0" border="0" style="FONT-FAMILY: Arial, sans-serif; width: 400px; background: transparent !important;">
-        <tbody>
-          <tr>
-            <td style="WIDTH: 240px; padding-bottom: 10px;FONT-FAMILY: Arial, sans-serif; font-size: 9pt; line-height: 18px;">
+      <div style="display:table;FONT-FAMILY: Arial, sans-serif; width: 400px; background: transparent !important;">
+          <div style="display:table-row;">
+            <div style="display:table-cell;WIDTH: 240px; padding-bottom: 10px;FONT-FAMILY: Arial, sans-serif; font-size: 9pt; line-height: 18px;">
               <span style="FONT-FAMILY: Arial, sans-serif; FONT-SIZE: 12pt; COLOR: #2c7da5; line-height: 13pt">
                 <strong>${forename} ${surname}</strong>
               </span>    
@@ -289,87 +283,73 @@ The content of this email is confidential and intended for the recipients specif
                 <br>${role}</span>
               <span style="FONT-FAMILY: Arial, sans-serif; font-size: 9pt; line-height: 18px; color: #000000; font-weight: bold;">
                 <br>${business}</span>
-            </td>
-            <td style="FONT-SIZE: 10pt; FONT-FAMILY: Arial, sans-serif; WIDTH: 160px; COLOR: #000000;padding-top 4px; vertical-align: top; text-align: right;">
-              <table style="float: right; background: transparent !important;">
-                <tbody>
-                  <tr>
-                    <td style="width: 22px; text-align: right;">
-                      <a href="${facebook}" target="_blank" rel="noopener"><img border="0" alt="facebook icon" width="18" height="18" style="border:0; width:18px; height:18px" src="https://imgmsgen.com/img/marketing-best-friend/fb.png"></a>
-                    </td>
-                    <td style="width: 22px; text-align: right;">
-                      <a href="${instagram}" target="_blank" rel="noopener"><img border="0" alt="instagram icon" width="18" height="18" style="border:0; width:18px; height:18px" src="https://imgmsgen.com/img/marketing-best-friend/it.png"></a>
-                    </td>
-                  </tr>
-                </tbody>          
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2" style="FONT-SIZE: 9pt; padding-top: 10px; padding-bottom: 10px; line-height: 14pt; border-top: 1px solid #2c7da5;">
-              <table cellspacing="0" cellpadding="0" style=" background: transparent !important;">
-                <tbody>
-                  <tr>
-                    <td style="width: 79px;">
-                      <span style="padding: 0px; margin: 0px; font-size: 9pt; line-height: 18px; font-weight: bold; font-family: Arial, sans-serif;color: #000000; vertical-align: top;">Email:</span>
-                    </td>
-                    <td style="width: 10px;">
-                    </td>
-                    <td style="width: 311px;">
-                      <span style="padding: 0px; margin: 0px; font-size: 9pt; line-height: 18px;">
-                        <a href="mailto:${email}" style="font-size: 9pt; font-family: Arial, sans-serif;color: #000000; text-decoration: none;line-height: 18px;">
-                          <span style="font-size: 9pt; line-height: 18px; font-family: Arial, sans-serif;color: #000000; text-decoration: none;">${email}</span>
-                        </a>
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 79px;">
-                      <span style="padding: 0px; margin: 0px; font-size: 9pt; line-height: 18px; font-weight: bold; font-family: Arial, sans-serif;color: #000000; vertical-align: top;">Telephone:</span>
-                    </td>
-                    <td style="width: 10px;">
-                    </td>
-                    <td style="width: 311px;">
-                      <span style="padding: 0px; margin: 0px; font-size: 9pt; line-height: 18px; font-family: Arial, sans-serif;color: #000000; vertical-align: top;">${tel}</span>
-                    </td>
-                  </tr>                  
-                  <tr>
-                    <td style="width: 79px; vertical-align: top;">
-                      <span style="padding: 0px; margin: 0px; font-size: 9pt; line-height: 18px; font-weight: bold; font-family: Arial, sans-serif;color: #000000; vertical-align: top;">Address:</span>
-                    </td>
-                    <td style="width: 10px;">
-                    </td>
-                    <td style="width: 311px; font-family: Arial, sans-serif; vertical-align: top;">
-                      <span style="padding: 0px; margin: 0px; font-size: 9pt; line-height: 18px; color: #000000;">${address}<span>,</span>
-                      </span>
-                      <span style="padding: 0px; margin: 0px; font-size: 9pt; line-height: 18px; color: #000000;">${postcode}</span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2" style="padding-top: 10px; max-width: 400px; border-top: 1px solid #2c7da5;">
-              <span>
-                <a href="http://${website}" target="_blank" rel="noopener" style="text-decoration:none;"><span style="color:#2c7da5; font-family:Arial, sans-serif; font-size:9pt; text-decoration:none; font-weight: bold;">${website}</span></a>
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2" style="padding-top: 10px; FONT-SIZE: 8pt; color: #999999; line-height: 11px;  max-width: 420px; text-align: justify;">
-              ${disclaimer}
-            </td>
-          </tr>
-        </tbody>
-      </table>
+            </div>
+            <div style="display:table-cell;FONT-SIZE: 10pt; FONT-FAMILY: Arial, sans-serif; WIDTH: 160px; COLOR: #000000;padding-top 4px; vertical-align: top; text-align: right;">
+              <div style="display:table;float: right; background: transparent !important;">
+                  <div style="display:table-row;">
+                    <div style="display:table-cell;width: 22px; text-align: right;">
+                      <a href="${facebook}" target="_blank" rel="noopener"><img alt="facebook icon" width="18" height="18" style="border:0; width:18px; height:18px" src="https://imgmsgen.com/img/marketing-best-friend/fb.png"></a>
+                    </div>
+                    <div style="display:table-cell;width: 22px; text-align: right;">
+                      <a href="${instagram}" target="_blank" rel="noopener"><img alt="instagram icon" width="18" height="18" style="border:0; width:18px; height:18px" src="https://imgmsgen.com/img/marketing-best-friend/it.png"></a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="table">
+        <div style="display:table-row;">
+          <div style="display:table-cell;FONT-SIZE: 9pt; padding-top: 10px; padding-bottom: 10px; line-height: 14pt; border-top: 1px solid #2c7da5;">
+            <div style="display:table;background: transparent !important;">
+              <div style="display:table-row;">
+                <div style="display:table-cell;width: 79px;">
+                  <span style="padding: 0px; margin: 0px; font-size: 9pt; line-height: 18px; font-weight: bold; font-family: Arial, sans-serif;color: #000000;">Email:</span>
+                </div>
+                <div style="display:table-cell;width: 311px;">
+                  <span style="padding: 0px; margin: 0px; font-size: 9pt; line-height: 18px;">
+                    <a href="mailto:${email}" style="font-size: 9pt; font-family: Arial, sans-serif;color: #000000; text-decoration: none;line-height: 18px;">
+                      <span style="font-size: 9pt; line-height: 18px; font-family: Arial, sans-serif;color: #000000; text-decoration: none;">${email}</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div style="display:table-row;">
+                <div style="display:table-cell;width: 79px;">
+                  <span style="padding: 0px; margin: 0px; font-size: 9pt; line-height: 18px; font-weight: bold; font-family: Arial, sans-serif;color: #000000;">Telephone:</span>
+                </div>
+                <div style="display:table-cell;width: 311px;">
+                  <span style="padding: 0px; margin: 0px; font-size: 9pt; line-height: 18px; font-family: Arial, sans-serif;color: #000000;">${tel}</span>
+                </div>
+              </div>
+              <div style="display:table-row;">
+                <div style="display:table-cell;width: 79px;">
+                  <span style="padding: 0px; margin: 0px; font-size: 9pt; line-height: 18px; font-weight: bold; font-family: Arial, sans-serif;color: #000000;">Address:</span>
+                </div>
+                <div style="display:table-cell;width: 311px; font-family: Arial, sans-serif;">
+                  <span style="padding: 0px; margin: 0px; font-size: 9pt; line-height: 18px; color: #000000;">${address}<span>,</span>
+                  </span>
+                  <span style="padding: 0px; margin: 0px; font-size: 9pt; line-height: 18px; color: #000000;">${postcode}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="padding-top:10px;max-width:400px;border-top:1px solid #2c7da5;">
+          <div>
+            <a href="http://${website}" target="_blank" rel="noopener" style="text-decoration:none;"><span style="color:#2c7da5; font-family:Arial, sans-serif; font-size:9pt; text-decoration:none; font-weight: bold;">${website}</span></a>
+          </div>
+          <div style="padding-top: 10px; FONT-SIZE: 8pt; color: #999999; line-height: 11px;  max-width: 420px; text-align: justify;">
+            ${disclaimer}
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="signature hidden" id="four">
-      <table style="width: 420px; font-size: 10pt; font-family: Arial, sans-serif; background: transparent !important;" cellpadding="0" cellspacing="0" border="0">
-        <tbody>
-          <tr>
-            <td style="font-size: 10pt; font-family: Arial, sans-serif; border-right: 1px solid #00a78d; width:200px; padding-right: 10px; vertical-align: top;  padding-bottom: 20px;" valign="top">
+      <div style="display:table;width: 420px; font-size: 10pt; font-family: Arial, sans-serif; background: transparent !important;">
+          <div style="display:table-row;">
+            <div style="display:table-cell;font-size: 10pt; font-family: Arial, sans-serif; border-right: 1px solid #00a78d; width:200px; padding-right: 10px; vertical-align: top;  padding-bottom: 20px;">
               <p style="margin-bottom:25px; padding-bottom: 0px; line-height:1.0">
                 <strong>
                   <span style="font-size: 12pt; font-family: Arial, sans-serif; color:#00a78d; line-height: 18pt;">${forename} ${surname}</span>
@@ -379,11 +359,11 @@ The content of this email is confidential and intended for the recipients specif
               </p>  
               <span>
                 <a href="${weblink}" target="_blank">
-                  <img border="0" alt="Logo" width="159" style="width:159px; height:auto; border:0;" src="${logo}">
+                  <img alt="Logo" width="159" style="width:159px; height:auto; border:0;" src="${logo}">
                 </a>
               </span>
-            </td>
-            <td valign="top" style="padding-left: 30px; padding-bottom: 20px;"> 
+            </div>
+            <div style="display:table-cell;padding-left: 30px; padding-bottom: 20px; vertical-align: top;"> 
               <span>
                 <span style="color: #262626;">
                   <strong>@</strong>
@@ -410,42 +390,40 @@ The content of this email is confidential and intended for the recipients specif
                 </span>
                 <span style="font-size: 9pt; font-family: Arial, sans-serif; color: #262626;">${postcode}</span>
               </span>		
-            </td>
-          </tr>
-          <tr>
-            <td style="border-right: 1px solid #00a78d;vertical-align: top;" valign="top">
+            </div>
+          </div>
+          <div style="display:table-row;">
+            <div style="display:table-cell;border-right: 1px solid #00a78d;vertical-align: top;">
               <a href="http://${website}" target="_blank" rel="noopener" style="font-size: 9pt; font-family: Arial, sans-serif; text-decoration:none; color: #00a78d; font-weight: bold;"><span style="font-size: 9pt; font-family: Arial, sans-serif; text-decoration:none; color: #00a78d; font-weight: bold;">${website}</span></a>
-            </td>    
-            <td valign="top" style="padding-left: 30px;"> 
+            </div>    
+            <div style="display:table-cell;padding-left: 30px;vertical-align: top;"> 
               <span>
-                <a href="${facebook}" target="_blank" rel="noopener"><img border="0" width="26" alt="facebook icon" style="border:0; height:26px; width:26px" src="https://imgmsgen.com/img/two-column-minimalist/fb.png"></a>&nbsp;</span>
+                <a href="${facebook}" target="_blank" rel="noopener"><img width="26" alt="facebook icon" style="border:0; height:26px; width:26px" src="https://imgmsgen.com/img/two-column-minimalist/fb.png"></a>&nbsp;</span>
               <span>
-                <a href="${instagram}" target="_blank" rel="noopener"><img border="0" width="26" alt="instagram icon" style="border:0; height:26px; width:26px" src="https://imgmsgen.com/img/two-column-minimalist/it.png"></a>&nbsp;</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+                <a href="${instagram}" target="_blank" rel="noopener"><img width="26" alt="instagram icon" style="border:0; height:26px; width:26px" src="https://imgmsgen.com/img/two-column-minimalist/it.png"></a>&nbsp;</span>
+            </div>
+          </div>
+      </div>
     </div>
 
     <div class="signature hidden" id="five">
-      <table style="WIDTH: 440px; background: transparent !important; FONT-FAMILY: Arial, sans-serif;" width="440" cellspacing="0" cellpadding="0" border="0">
-        <tbody> 
-          <tr>
-            <td style="FONT-SIZE: 10pt; FONT-FAMILY: Arial, sans-serif; WIDTH: 290px; PADDING-BOTTOM: 5px; line-height:13pt;" width="290" valign="top">
+      <div style="display:table;WIDTH: 440px; background: transparent !important; FONT-FAMILY: Arial, sans-serif;" width="440">
+          <div style="display:table-row;">
+            <div style="display:table-cell;FONT-SIZE: 10pt; FONT-FAMILY: Arial, sans-serif; WIDTH: 290px; PADDING-BOTTOM: 5px; line-height:13pt;vertical-align: top;" width="290">
 	          <strong>
 	            <span style="FONT-SIZE: 18pt; FONT-FAMILY: Arial, sans-serif; COLOR: #0682b0">${forename} ${surname}</span>
 		      </strong>
               <br>
 		      <span style="FONT-SIZE: 11pt; FONT-FAMILY: Arial, sans-serif; COLOR: #666666">${role}</span>
-	        </td>
-            <td valign="top" width="150" align="right" style="width:150px">
+	        </div>
+            <div style="display:table-cell;" width="150" align="right" style="width:150px;vertical-align: top;">
 		      <span>
-			    <a href="${weblink}" target="_blank" rel="noopener"><img border="0" alt="Logo" width="147" style="max-width:147px; height:auto; border:0;" src="${logo}"></a>
+			    <a href="${weblink}" target="_blank" rel="noopener"><img alt="Logo" width="147" style="max-width:147px; height:auto; border:0;" src="${logo}"></a>
 		      </span>
-	        </td>
-	      </tr>
-          <tr>    
-	        <td colspan="2" style="padding-top:10px; BORDER-TOP: #0682b0 1px solid; font-size:10pt">
+	        </div>
+	      </div>
+          <div style="display:table-row;">    
+	        <div style="display:table-cell;" colspan="2" style="padding-top:10px; BORDER-TOP: #0682b0 1px solid; font-size:10pt">
 		      <span style="color:#666666;">
                 <strong style="color:#0682b0;">Phone:</strong> ${tel}</span>
               <span style="color:#666666;">
@@ -461,59 +439,52 @@ The content of this email is confidential and intended for the recipients specif
                 <span>
                   <span>,</span> ${postcode}</span>			
 		      </span>			
-	        </td>
-	      </tr>
-          <tr>
-            <td style="line-height:12pt; FONT-SIZE: 10pt; FONT-FAMILY: Arial, sans-serif;" valign="bottom">
+	        </div>
+	      </div>
+          <div style="display:table-row;">
+            <div style="display:table-cell;line-height:12pt; FONT-SIZE: 10pt; FONT-FAMILY: Arial, sans-serif;vertical-align: bottom;">
 		      <span>
 			    <a href="http://${website}" target="_blank" rel="noopener" style=" text-decoration:none;"><strong style="color:#0682b0; font-family:Arial, sans-serif;">${website}</strong></a>		
 		      </span>
-	        </td>
-	        <td align="right">
-		      <span>&nbsp;&nbsp;<a href="${facebook}" target="_blank" rel="noopener"><img border="0" width="13" alt="facebook icon" style="border:0; height:13px; width:13px" src="https://imgmsgen.com/img/out-of-the-blue/fb.png"></a>
+	        </div>
+	        <div style="display:table-cell;" align="right">
+		      <span>&nbsp;&nbsp;<a href="${facebook}" target="_blank" rel="noopener"><img width="13" alt="facebook icon" style="border:0; height:13px; width:13px" src="https://imgmsgen.com/img/out-of-the-blue/fb.png"></a>
               </span>
-		      <span>&nbsp;&nbsp;<a href="${instagram}" target="_blank" rel="noopener"><img border="0" width="13" alt="instagram icon" style="border:0; height:13px; width:13px" src="https://imgmsgen.com/img/out-of-the-blue/it.png"></a>
+		      <span>&nbsp;&nbsp;<a href="${instagram}" target="_blank" rel="noopener"><img width="13" alt="instagram icon" style="border:0; height:13px; width:13px" src="https://imgmsgen.com/img/out-of-the-blue/it.png"></a>
               </span>
-	        </td>
-          </tr>
+	        </div>
+          </div>
 	      
-        </tbody>
-      </table>
+      </div>
     </div>
 
     <div class="signature hidden" id="six">
-      <table style="width: 370px; font-size: 10pt; FONT-FAMILY: Arial, sans-serif; background: transparent !important;" cellpadding="0" cellspacing="0" border="0">
-        <tbody>
-          <tr>
-            <td style="width: 102px; font-size: 10pt; font-family: Arial, sans-serif; border-right: 1px solid #929292; vertical-align: top;" valign="top">
-              <table cellspacing="0" cellpadding="0" border="0" style="background: transparent !important;">
-                <tbody>
-                  <tr>
-                    <td style="padding-top: 35px;">
+      <div style="display:table;width: 370px; font-size: 10pt; FONT-FAMILY: Arial, sans-serif; background: transparent !important;">
+          <div style="display:table-row;">
+            <div style="display:table-cell;width: 102px; font-size: 10pt; font-family: Arial, sans-serif; border-right: 1px solid #929292; vertical-align: top;">
+              <div style="display:table;background: transparent !important;">
+                  <div style="display:table-row;">
+                    <div style="display:table-cell;padding-top: 35px;">
                       <a href="${weblink}" target="_blank">
-                        <img border="0" alt="Logo" width="90" style="width:90px; height:auto; border:0;" src="${logo}">
+                        <img alt="Logo" width="90" style="width:90px; height:auto; border:0;" src="${logo}">
                       </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td style="width: 25px;">
-            </td>
-            <td style="width: 243px; font-size: 10pt; color:#444444; font-family: Arial, sans-serif; vertical-align: top;" valign="top">
-              <table cellspacing="0" cellpadding="0" border="0" style="background: transparent !important;">
-                <tbody>
-                  <tr>
-                    <td style="padding-bottom: 18px;">
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div style="display:table-cell;width: 243px; font-size: 10pt; color:#444444; font-family: Arial, sans-serif; vertical-align: top;padding-left:25px;">
+              <div style="display:table;background: transparent !important;">
+                  <div style="display:table-row;">
+                    <div style="display:table-cell;padding-bottom: 18px;">
                       <span style="padding: 0px; margin: 0px; font-size: 10pt; line-height: 12pt; font-family: Arial, sans-serif; color:#1251af; font-weight: bold;">${forename} ${surname}</span>
                       <span style="padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size:10pt; line-height: 12pt; font-weight: bold;color:#1251af;">
                         <br>${role}</span>
                       <span style="padding: 0px; margin: 0px; font-family: Arial, sans-serif; font-size:10pt; line-height: 12pt; font-weight: bold;color:#1251af;">
                         <br>${business}</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="padding-bottom: 18px;">
+                    </div>
+                  </div>
+                  <div style="display:table-row;">
+                    <div style="display:table-cell;padding-bottom: 18px;">
                       <p style="padding: 0px; margin: 0px; font-size: 9pt; line-height: 12pt; color: #000000;">
                         <span>
                           <strong>&#9742;</strong>
@@ -536,157 +507,64 @@ The content of this email is confidential and intended for the recipients specif
                           </a>
                         </span>
                       </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="padding-bottom: 12px;">
+                    </div>
+                  </div>
+                  <div style="display:table-row;">
+                    <div style="display:table-cell;padding-bottom: 12px;">
                       <p style="padding: 0px; margin: 0px;">
                         <span>
-                          <a href="${facebook}" target="_blank" rel="noopener"><img border="0" width="20" alt="facebook icon" style="border:0; height:20px; width:20px" src="https://imgmsgen.com/img/csr-03/fb.png"></a>&nbsp;</span>
+                          <a href="${facebook}" target="_blank" rel="noopener"><img width="20" alt="facebook icon" style="border:0; height:20px; width:20px" src="https://imgmsgen.com/img/csr-03/fb.png"></a>&nbsp;</span>
                         <span>
-                          <a href="${instagram}" target="_blank" rel="noopener"><img border="0" width="20" alt="instagram icon" style="border:0; height:20px; width:20px" src="https://imgmsgen.com/img/csr-03/it.png"></a>&nbsp;</span>
+                          <a href="${instagram}" target="_blank" rel="noopener"><img width="20" alt="instagram icon" style="border:0; height:20px; width:20px" src="https://imgmsgen.com/img/csr-03/it.png"></a>&nbsp;</span>
                       </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
+                    </div>
+                  </div>
+                  <div style="display:table-row;">
+                    <div style="display:table-cell;">
                       <span style="font-size: 9pt; line-height: 11pt;font-family: Arial, sans-serif; color: #000000;">${address}<span>,</span>
                       </span>
                       <span style="font-size: 9pt; line-height: 11pt;font-family: Arial, sans-serif; color: #000000;">${postcode}</span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-          </tr>  
-          <tr>
-            <td colspan="3" style="padding-top: 14px; text-align: justify; FONT-SIZE: 7pt; color: #978d76; line-height: 10px;  max-width: 370px;">
-              ${disclaimer}
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="signature hidden" id="eight">
-      <table style="width: 444px; font-size: 9pt; font-family: Arial, sans-serif; line-height:normal; background: transparent !important;" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="2" style=" font-size:12pt; font-family:Arial,sans-serif; padding-bottom:6px;  width:444px">
-              <span style="font-family: Arial, sans-serif; color:#1b7592; font-weight: bold">
-                ${forename} ${surname}
-                <span style="font-family: Arial, sans-serif; color:#1b7592; font-weight: bold"> | </span>
-              </span>
-              <span style="font-family: Arial, sans-serif; color:#1b7592; font-weight: bold">${role}</span>
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 289px; padding-top: 6px; padding-bottom:6px;">
-              <table cellpadding="0" cellspacing="0" style="background: transparent !important;">
-                <tbody>
-                  <tr>
-                    <td style="width: 70px;">
-                      <span style="width: 70px; font-size: 9pt; line-height: 13pt; font-family: Arial, sans-serif; color:#100000;">Phone:</span>
-                    </td>
-                    <td style="width: 229px;">
-                      <span style="width: 229px; font-size: 9pt; line-height: 13pt; font-family: Arial, sans-serif; color:#100000; font-weight: bold;">${tel}</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span style="font-size: 9pt; line-height: 13pt; font-family: Arial, sans-serif; color:#100000;">Email:</span>
-                    </td>
-                    <td>
-                      <span>
-                        <a href="mailto:${email}" style="font-size: 9pt; line-height: 13pt; font-family: Arial, sans-serif; color:#100000; font-weight: bold; text-decoration: none">
-                          <span style="font-size: 9pt; line-height: 13pt; font-family: Arial, sans-serif; color:#100000; font-weight: bold; text-decoration: none">${email}</span>
-                        </a>
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="vertical-align: top; padding-top: 1px; ">
-                      <span style="font-size: 9pt; line-height: 13pt; font-family: Arial, sans-serif; color:#100000;">Address:</span>
-                    </td>
-                    <td>
-                      <span style="font-size: 9pt; line-height: 13pt; font-family: Arial, sans-serif; color:#100000; font-weight: bold;">${business}<span>, </span>
-                      </span>
-                      <span style="font-size: 9pt; line-height: 13pt; font-family: Arial, sans-serif; color:#100000; font-weight: bold;">${address}<span>, </span>
-                      </span>
-                      <span style="font-size: 9pt; line-height: 13pt; font-family: Arial, sans-serif; color:#100000; font-weight: bold;">${postcode}</span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td style="width:155px; padding-top: 6px; padding-bottom:6px; text-align:right;">
-              <a href="${weblink}" target="_blank">
-                <img border="0" alt="Logo" height="56" style="max-width: 100%; width:auto; height:56px; border:0;" src="${logo}">
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td style="border-top: 1px solid #1b7592" colspan="2" width="444">
-            </td>
-          </tr>
-          <tr>
-            <td style="padding-top: 10px; padding-bottom: 10px; font-size: 10pt; font-family: Arial, sans-serif; font-weight:bold; color: #1793ce; width:289px;" width="299">
-              <span style="display:inline-block; font-family: Arial, sans-serif; font-size: 9pt; line-height: 19px;">
-                <a href="http://${website}" target="_blank" style="text-decoration:none; line-height: 19px;">
-                  <span style="font-family:Arial, sans-serif; color:#1b7592; text-decoration:none;">${website}</span>
-                </a>
-              </span>
-            </td>
-            <td style="width:145px; text-align:right; padding-top: 10px; padding-bottom: 10px; " width="155">
-              <span style="display:inline-block; height:19px;">
-                <span>&nbsp;&nbsp;<a href="${facebook}" target="_blank"><img alt="Facebook icon" border="0" width="19" height="19" style="border:0; height:19px; width:19px" src="https://imgmsgen.com/img/top-security/fb.png"></a>
-                </span>
-                <span>&nbsp;&nbsp;<a href="${instagram}" target="_blank"><img alt="Instagram icon" border="0" width="19" height="19" style="border:0; height:19px; width:19px" src="https://imgmsgen.com/img/top-security/it.png"></a>
-                </span>
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <td style="font-size:8pt; line-height: 9pt; font-family:Arial,sans-serif; color:#878787; width:444px; text-align:justify;" colspan="2" width="444">
-              <span style="font-family: Arial, sans-serif; color:#000000">${disclaimer}</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>  
+      </div>
+      <div style="padding-top: 14px; text-align: justify; FONT-SIZE: 7pt; color: #978d76; line-height: 10px;  max-width: 370px;">
+        ${disclaimer}
+      </div>
     </div>
 
     <div class="signature hidden" id="nine">
-      <table style="WIDTH: 414px; background: transparent !important;" cellspacing="0" cellpadding="0" border="0">
-        <tbody> 
-          <tr>
-            <td width="300" style="FONT-SIZE: 10pt; FONT-FAMILY: Arial, sans-serif;line-height:14pt;" valign="bottom">	
+      <div style="display:table;WIDTH: 414px; background: transparent !important;">
+          <div style="display:table-row;">
+            <div style="display:table-cell;" width="300" style="FONT-SIZE: 10pt; FONT-FAMILY: Arial, sans-serif;line-height:14pt;vertical-align: bottom;">	
 		      <strong>
                 <span style="FONT-SIZE: 18pt; FONT-FAMILY: Arial, sans-serif; COLOR: #125aa3">${forename} ${surname}</span>
               </strong>
               <br>
 		      <span style="FONT-SIZE: 14pt; FONT-FAMILY: Arial, sans-serif; COLOR: #037edd">${role}</span>	  
-	        </td>
-            <td valign="bottom" align="right" width="160">	
+	        </div>
+            <div style="display:table-cell;vertical-align:bottom" align="right" width="160">	
 		      <span>
-                <a href="${facebook}" target="_blank" rel="noopener"><img border="0" width="19" height="19" alt="facebook icon" style="border:0; height:19px; width:19px" src="https://imgmsgen.com/img/book-a-call/fb.png"></a>
+                <a href="${facebook}" target="_blank" rel="noopener"><img width="19" height="19" alt="facebook icon" style="border:0; height:19px; width:19px" src="https://imgmsgen.com/img/book-a-call/fb.png"></a>
               </span>
 		      <span>
-                <a href="${instagram}" target="_blank" rel="noopener"><img border="0" width="19" height="19" alt="instagram icon" style="border:0; height:19px; width:19px" src="https://imgmsgen.com/img/book-a-call/it.png"></a>
+                <a href="${instagram}" target="_blank" rel="noopener"><img width="19" height="19" alt="instagram icon" style="border:0; height:19px; width:19px" src="https://imgmsgen.com/img/book-a-call/it.png"></a>
               </span>
-	        </td>	
-	      </tr>
-          <tr>
-            <td style="FONT-SIZE: 9pt; FONT-FAMILY: Arial, sans-serif;" valign="top" colspan="2">
+	        </div>	
+	      </div>
+          <div style="display:table-row;">
+            <div style="display:table-cell;FONT-SIZE: 9pt; FONT-FAMILY: Arial, sans-serif;vertical-align: top;" colspan="2">
 		      
-		      <table style="WIDTH: 414px; background: transparent !important;" cellspacing="0" cellpadding="0" border="0">
-			    <tbody>
-                  <tr>
-				    <td style="padding-right:30px" valign="top">
+		      <div style="display:table;WIDTH: 414px; background: transparent !important;">
+                  <div style="display:table-row;">
+				    <div style="display:table-cell;padding-right:30px;vertical-align: top;">
 					  <span>
-						<a href="${weblink}" target="_blank" rel="noopener"><img border="0" alt="Logo" width="131" style="max-width:131px; height:auto; border:0;" src="${logo}"></a>
+						<a href="${weblink}" target="_blank" rel="noopener"><img alt="Logo" width="131" style="max-width:131px; height:auto; border:0;" src="${logo}"></a>
 					  </span>					
-				    </td>
-				    <td width="30" valign="top" style="FONT-SIZE: 9pt; FONT-FAMILY: Arial, sans-serif; line-height:11pt">
+				    </div>
+				    <div style="display:table-cell;" width="30" style="FONT-SIZE: 9pt; FONT-FAMILY: Arial, sans-serif; line-height:11pt;vertical-align: top;">
 				      
 					  <span style="color:#101010;">
                         <strong style="color:#101010; display:table-cell; width:30px;">&#128222;</strong>
@@ -702,8 +580,8 @@ The content of this email is confidential and intended for the recipients specif
 						<strong style="color:#101010; display:table-cell; width:30px;">&#x2709;</strong>
 					  </span>
 					  
-				    </td>
-				    <td valign="top" style="FONT-SIZE: 9pt; FONT-FAMILY: Arial, sans-serif; line-height:11pt">
+				    </div>
+				    <div style="display:table-cell;FONT-SIZE: 9pt; FONT-FAMILY: Arial, sans-serif; line-height:11pt;vertical-align:top;">
 					  
 					  <span style="color:#101010;">${tel}<br>
                       </span>
@@ -723,192 +601,175 @@ The content of this email is confidential and intended for the recipients specif
 						<br>
                         <a href="http://${website}" target="_blank" rel="noopener" style=" text-decoration:none;"><strong style="color:#037edd; font-family:Arial, sans-serif;">${website}</strong></a>		
 					  </span>
-				    </td>
-			      </tr>
-		        </tbody>
-              </table>
-	        </td>
-          </tr>
-        </tbody>
-      </table>
+				    </div>
+			      </div>
+              </div>
+	        </div>
+          </div>
+      </div>
     </div>
 
     <div class="signature hidden" id="ten">
-      <table width="480" style="font-size: 11pt; font-family: Arial, sans-serif; background: transparent !important;" cellpadding="0" cellspacing="0" border="0">
-        <tbody>
-          <tr>
-            <td width="160" style="font-size: 10pt; font-family: Arial, sans-serif; width: 160px; vertical-align: top;" valign="top">
+      <div class="table" width="480" style="font-size: 11pt; font-family: Arial, sans-serif; background: transparent !important;">
+          <div style="display:table-row;">
+            <div style="display:table-cell;" width="160" style="font-size: 10pt; font-family: Arial, sans-serif; width: 160px; vertical-align: top;">
 		      <a href="${weblink}" target="_blank">
-                <img border="0" alt="Logo" width="125" style="width:125px; height:auto; border:0;" src="${logo}">
+                <img alt="Logo" width="125" style="width:125px; height:auto; border:0;" src="${logo}">
               </a>
 		      
-            </td>
-            <td valign="top" width="270" style="width:270px; vertical-align: top; line-height:11px; border-right:2px solid #29abe1">
+            </div>
+            <div style="display:table-cell;" width="270" style="width:270px; vertical-align: top; line-height:11px; border-right:2px solid #29abe1;vertical-align: top;">
 	          
-	          <table cellpadding="0" cellspacing="0" border="0" width="270" style="background: transparent !important;">
-	            <tbody>
-		          <tr>
-                    <td style="font-size:12pt; height:14px; line-height:14px">
+	          <div class="table" width="270" style="background: transparent !important;">
+		          <div style="display:table-row;">
+                    <div style="display:table-cell;font-size:12pt; height:14px; line-height:14px">
                       <span style="font-family: Arial, sans-serif;font-size: 12pt;color:#29abe1;">
                         <strong>${forename} ${surname}</strong>
                       </span>
-                    </td>
-		          </tr>
-		          <tr>
-			        <td style="font-size:9pt; height:14px; line-height:14px">
+                    </div>
+		          </div>
+		          <div style="display:table-row;">
+			        <div style="display:table-cell;font-size:9pt; height:14px; line-height:14px">
 				      <span style="font-family: Arial, sans-serif; font-size:9pt; color:#000000;">${role}<span> | </span>
                       </span>
 				      <span style="font-family: Arial, sans-serif; font-size:9pt; color:#000000;">${business}</span>			
-			        </td>
-		          </tr>
-		          <tr>
-			        <td style="height:14px; line-height:14px">&nbsp;</td>
-		          </tr>
-		          <tr>
-			        <td style="font-size:9pt; height:14px; line-height:14px">
+			        </div>
+		          </div>
+		          <div style="display:table-row;">
+			        <div style="display:table-cell;height:14px; line-height:14px">&nbsp;</div>
+		          </div>
+		          <div style="display:table-row;">
+			        <div style="display:table-cell;font-size:9pt; height:14px; line-height:14px">
 				      <span style="font-family: Arial, sans-serif;color:#000000;FONT-SIZE: 9pt">
                         <strong>P</strong> ${tel}</span>			
-			        </td>
-		          </tr>
-		          <tr>
-			        <td style="font-size:9pt; height:12px; line-height:12px">
+			        </div>
+		          </div>
+		          <div style="display:table-row;">
+			        <div style="display:table-cell;font-size:9pt; height:12px; line-height:12px">
 				      <span style="font-family: Arial, sans-serif;color:#000000;FONT-SIZE: 9pt">
                         <strong>E</strong>  ${email}</span>		
-			        </td>
-		          </tr>	
-		          <tr>
-			        <td style="height:14px; line-height:14px">&nbsp;</td>
-		          </tr>		
-		          <tr>
-			        <td style="font-size:9pt; height:12px; line-height:12px">
+			        </div>
+		          </div>	
+		          <div style="display:table-row;">
+			        <div style="display:table-cell;height:14px; line-height:14px">&nbsp;</div>
+		          </div>		
+		          <div style="display:table-row;">
+			        <div style="display:table-cell;font-size:9pt; height:12px; line-height:12px">
 				      <span style="font-family: Arial, sans-serif;color:#000000;FONT-SIZE: 9pt">
                         <span>${address}<span>, </span>
                         </span>
                         <span>${postcode}</span>
                       </span>
-			        </td>
-		          </tr>	
+			        </div>
+		          </div>	
 		          
-		          <tr>
-			        <td style="font-size:9pt; height:12px; line-height:12px">
+		          <div style="display:table-row;">
+			        <div style="display:table-cell;font-size:9pt; height:12px; line-height:12px">
 				      <span>
                         <a href="http://${website}" target="_blank" rel="noopener" style=" text-decoration:none;"><strong style="color:#29abe1; font-family:Arial, sans-serif; font-size:9pt">${website}</strong></a>
                       </span>		
-			        </td>
-		          </tr>	
-	            </tbody>
-                <tbody>		
-	            </tbody>
-              </table>
-            </td>
-            <td style="vertical-align: top; padding-left:10px" valign="top" width="35">
-		      <table cellpadding="0" cellspacing="0" border="0" width="25" style="background: transparent !important;">
-			    <tbody>
-                  <tr>
-				    <td width="25" height="30" valign="top" style="vertical-align: top;">
-                      <a href="${facebook}" target="_blank" rel="noopener"><img border="0" width="26" height="25" alt="facebook icon" style="border:0; height:25px; width:26px;" src="https://imgmsgen.com/img/hexagonal-logo/fb.png"></a>
-                    </td>
-			      </tr>
-		        </tbody>
-              </table>
-            </td>
-            <td style="vertical-align: top;" valign="top" width="25">
-		      <table cellpadding="0" cellspacing="0" border="0" width="25" style="background: transparent !important;">	
-			    <tbody>
-                  <tr>
-                    <td style="height:12px; font-size:1px" height="12">&nbsp;</td>
-                  </tr>
-			      <tr>
-				    <td width="25" height="30" valign="top" style="vertical-align: top;">
-                      <a href="${instagram}" target="_blank" rel="noopener"><img border="0" width="26" height="25" alt="instagram icon" style="border:0; height:25px; width:26px;" src="https://imgmsgen.com/img/hexagonal-logo/it.png"></a>
-                    </td>
-			      </tr>
-		        </tbody>
-              </table>
-            </td>
-          </tr> 
-          <tr>
-          </tr>
-          <tr>
-	        <td colspan="4" style="padding-top:15px; line-height:14px; font-size: 7.5pt; color: #808080; font-family: Arial, sans-serif;">${disclaimer}</td>
-          </tr>
-        </tbody>
-      </table>
+			        </div>
+		          </div>	
+              </div>
+            </div>
+            <div style="display:table-cell;vertical-align: top; padding-left:10px'vertical-align: top;" width="35">
+		      <div class="table" width="25" style="background: transparent !important;">
+                  <div style="display:table-row;">
+				    <div style="display:table-cell;" width="25" height="30" style="vertical-align: top;">
+                      <a href="${facebook}" target="_blank" rel="noopener"><img width="26" height="25" alt="facebook icon" style="border:0; height:25px; width:26px;" src="https://imgmsgen.com/img/hexagonal-logo/fb.png"></a>
+                    </div>
+			      </div>
+              </div>
+            </div>
+            <div style="display:table-cell;vertical-align: top;" width="25">
+		      <div class="table" width="25" style="background: transparent !important;">	
+                  <div style="display:table-row;">
+                    <div style="display:table-cell;height:12px; font-size:1px" height="12">&nbsp;</div>
+                  </div>
+			      <div style="display:table-row;">
+				    <div style="display:table-cell;" width="25" height="30" style="vertical-align: top;">
+                      <a href="${instagram}" target="_blank" rel="noopener"><img width="26" height="25" alt="instagram icon" style="border:0; height:25px; width:26px;" src="https://imgmsgen.com/img/hexagonal-logo/it.png"></a>
+                    </div>
+			      </div>
+              </div>
+            </div>
+          </div> 
+          <div style="display:table-row;">
+          </div>
+          <div style="display:table-row;">
+	        <div style="display:table-cell;" colspan="4" style="padding-top:15px; line-height:14px; font-size: 7.5pt; color: #808080; font-family: Arial, sans-serif;">${disclaimer}</div>
+          </div>
+      </div>
     </div>
 
     <div class="signature hidden" id="eleven">
-      <table style="width: 480px; font-size: 10pt; font-family: Arial, sans-serif; line-height:normal; background: transparent !important;" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>	
-            <td style="padding-top:10px; padding-bottom:12px; width:160px; vertical-align:top" valign="top">
+      <div style="display:table;width: 480px; font-size: 10pt; font-family: Arial, sans-serif; line-height:normal; background: transparent !important;">
+          <div style="display:table-row;">	
+            <div style="display:table-cell;padding-top:10px; padding-bottom:12px; width:160px; vertical-align:top">
               <a href="${weblink}" target="_blank">
-                <img border="0" alt="Logo" width="141" style="width:141px; height:auto; border:0;" src="${logo}">
+                <img alt="Logo" width="141" style="width:141px; height:auto; border:0;" src="${logo}">
               </a>
-            </td>
-            <td style="padding-top:6px; padding-bottom:6px;  width:320px; ">
-              <table cellpadding="0" cellspacing="0">
-                <tbody>
-                  <tr>
-                    <td style="font-size: 12pt; font-family: Arial, sans-serif; font-weight: bold; color: #3d3c3f;">
+            </div>
+            <div style="display:table-cell;padding-top:6px; padding-bottom:6px;  width:320px; ">
+              <div class="table">
+                  <div style="display:table-row;">
+                    <div style="display:table-cell;font-size: 12pt; font-family: Arial, sans-serif; font-weight: bold; color: #3d3c3f;">
                       <span style="font-family: Arial, sans-serif; color:#3d3c3f">${forename} ${surname}</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="padding-bottom:11px; font-size: 10pt; font-family: Arial, sans-serif; color: #3d3c3f;">
+                    </div>
+                  </div>
+                  <div style="display:table-row;">
+                    <div style="display:table-cell;padding-bottom:11px; font-size: 10pt; font-family: Arial, sans-serif; color: #3d3c3f;">
                       <span style="font-family: Arial, sans-serif; color:#3d3c3f">${role}</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="font-size: 10pt; font-family: Arial, sans-serif; color: #9b9b9b;">
+                    </div>
+                  </div>
+                  <div style="display:table-row;">
+                    <div style="display:table-cell;font-size: 10pt; font-family: Arial, sans-serif; color: #9b9b9b;">
                       <span style="font-family: Arial, sans-serif; color:#9b9b9b">phone: ${tel}</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="font-size: 10pt; font-family: Arial, sans-serif; color: #9b9b9b;">
+                    </div>
+                  </div>
+                  <div style="display:table-row;">
+                    <div style="display:table-cell;font-size: 10pt; font-family: Arial, sans-serif; color: #9b9b9b;">
                       <span style="font-family: Arial, sans-serif; color:#9b9b9b">email: </span>
                       <span style="font-family: Arial, sans-serif; color:#1793d2;">
                         <span style="font-family: Arial, sans-serif; color:#1793d2">${email}</span>
                       </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="font-size: 10pt; font-family: Arial, sans-serif; color: #9b9b9b;">
+                    </div>
+                  </div>
+                  <div style="display:table-row;">
+                    <div style="display:table-cell;font-size: 10pt; font-family: Arial, sans-serif; color: #9b9b9b;">
                       <span style="font-family: Arial, sans-serif; color:#9b9b9b">${address}</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="font-size: 10pt; font-family: Arial, sans-serif; color: #9b9b9b;">
+                    </div>
+                  </div>
+                  <div style="display:table-row;">
+                    <div style="display:table-cell;font-size: 10pt; font-family: Arial, sans-serif; color: #9b9b9b;">
                       <span style="font-family: Arial, sans-serif; color:#9b9b9b">${postcode}</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="padding-top:6px;">
+                    </div>
+                  </div>
+                  <div style="display:table-row;">
+                    <div style="display:table-cell;padding-top:6px;">
                       <span style="display:inline-block; height:22px;">
                         <span>
-                          <a href="${facebook}" target="_blank"><img alt="Facebook icon" border="0" width="20" height="20" style="border:0; height:20px; width:20px" src="https://imgmsgen.com/img/elegant-logo/fb.png"></a>&nbsp;&nbsp;</span>
+                          <a href="${facebook}" target="_blank"><img alt="Facebook icon" width="20" height="20" style="border:0; height:20px; width:20px" src="https://imgmsgen.com/img/elegant-logo/fb.png"></a>&nbsp;&nbsp;</span>
                         <span>
-                          <a href="${instagram}" target="_blank"><img alt="Instagram icon" border="0" width="20" height="20" style="border:0; height:20px; width:20px" src="https://imgmsgen.com/img/elegant-logo/it.png"></a>&nbsp;&nbsp;</span>
+                          <a href="${instagram}" target="_blank"><img alt="Instagram icon" width="20" height="20" style="border:0; height:20px; width:20px" src="https://imgmsgen.com/img/elegant-logo/it.png"></a>&nbsp;&nbsp;</span>
                       </span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2" style="border-top:1px solid; border-top-color:#1793d2; width: 480px; padding-top:8px;  font-family:Arial,sans-serif; color:#9b9b9b; text-align:justify;">
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div style="display:table-row;">
+            <div style="display:table-cell;border-top:1px solid; border-top-color:#1793d2; width: 480px; padding-top:8px;  font-family:Arial,sans-serif; color:#9b9b9b; text-align:justify;">
               <span style="font-family: Arial, sans-serif; color:#9b9b9b">${disclaimer}</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+            </div>
+          </div>
+      </div>
     </div>
 
     <div class="signature hidden" id="twelve">
-      <table style="width:450px; background: transparent !important;" width="450" cellpadding="0" cellspacing="0">
-        <tbody style="vertical-align:top;">
-          <tr>
-            <td style="border-bottom:1px solid; border-bottom-color:#4a6481; padding-bottom:10px; padding-top:0; padding-left:0; padding-right:0; vertical-align:bottom; font-family:Verdana, sans-serif; color:#3b4908;" valign="bottom">
+      <div style="display:table;width:450px; background: transparent !important;" width="450">
+          <div style="display:table-row;">
+            <div style="display:table-cell;border-bottom:1px solid; border-bottom-color:#4a6481; padding-bottom:10px; padding-top:0; padding-left:0; padding-right:0; vertical-align:bottom; font-family:Verdana, sans-serif; color:#3b4908;">
               <strong>
                 <span style="font-family:Verdana, sans-serif; font-size:14pt; color:#4a6481">${forename}&nbsp;${surname}</span>
               </strong>
@@ -916,25 +777,25 @@ The content of this email is confidential and intended for the recipients specif
               <span style="font-family:Verdana, sans-serif; font-size:10pt; color:#444444;">
                 <span style="font-family:Verdana, sans-serif; color:#2c2c2c">${role}</span>
               </span>
-            </td>
-            <td style="border-bottom:1px solid; border-bottom-color:#4a6481; padding-bottom:10px; padding-top:0; padding-left:0; padding-right:0; vertical-align:top; font-family:Verdana, sans-serif; color:#3b4908;" valign="top">
+            </div>
+            <div style="display:table-cell;border-bottom:1px solid; border-bottom-color:#4a6481; padding-bottom:10px; padding-top:0; padding-left:0; padding-right:0; vertical-align:top; font-family:Verdana, sans-serif; color:#3b4908;">
 		      <a href="${weblink}" target="_blank">
-                <img border="0" alt="Logo" width="179" style="width:179px; height:auto; border:0;" src="${logo}">
+                <img alt="Logo" width="179" style="width:179px; height:auto; border:0;" src="${logo}">
               </a>
 		      
-            </td> 
+            </div> 
 	        
-          </tr>		
-          <tr>
-            <td style="width:60%; padding-top:10px; padding-bottom:0; padding-left:0; padding-right:0; line-height:18px; vertical-align:top; font-family:Verdana, sans-serif; font-size:10pt; color:#444444;" valign="top" width="60%">
+          </div>		
+          <div style="display:table-row;">
+            <div style="display:table-cell;width:60%; padding-top:10px; padding-bottom:0; padding-left:0; padding-right:0; line-height:18px; vertical-align:top; font-family:Verdana, sans-serif; font-size:10pt; color:#444444;" width="60%">
               <span style="font-family:Verdana, sans-serif; font-size:10pt; color:#2c2c2c">t: ${tel}<span>
                   <br>
                 </span>
               </span>
     		  
               <span style="font-family:Verdana, sans-serif; font-size:10pt; color:#2c2c2c">e: ${email}</span>											
-            </td>
-            <td style="width:40%; padding-top:10px; padding-bottom:0; padding-left:0; padding-right:0; line-height:18px; vertical-align:top; font-family:Verdana, sans-serif; font-size:10pt; color:#444444;" valign="top" width="40%">
+            </div>
+            <div style="display:table-cell;width:40%; padding-top:10px; padding-bottom:0; padding-left:0; padding-right:0; line-height:18px; vertical-align:top; font-family:Verdana, sans-serif; font-size:10pt; color:#444444;" width="40%">
               <span style="font-family:Verdana, sans-serif; font-size:10pt; color:#2c2c2c">${business}<span>
                   <br>
                 </span>
@@ -944,16 +805,16 @@ The content of this email is confidential and intended for the recipients specif
                 </span>
               </span>
               <span style="font-family:Verdana, sans-serif; font-size:10pt; color:#2c2c2c">${postcode}</span>
-            </td>
-          </tr>
-          <tr>
-            <td style="width:60%; padding-top:10px; padding-bottom:0; padding-left:0; padding-right:0; vertical-align:top" width="60%" valign="top">						
+            </div>
+          </div>
+          <div style="display:table-row;">
+            <div style="display:table-cell;width:60%; padding-top:10px; padding-bottom:0; padding-left:0; padding-right:0; vertical-align:top" width="60%">						
               <span>
-                <a href="${facebook}" target="_blank" rel="noopener"><img border="0" width="16" alt="facebook icon" style="margin-right:5px; margin-bottom:1px; border:0; width:16px; height:16px;" src="https://imgmsgen.com/img/plaintext3-with-logo/fb.png"></a>&nbsp;</span>
+                <a href="${facebook}" target="_blank" rel="noopener"><img width="16" alt="facebook icon" style="margin-right:5px; margin-bottom:1px; border:0; width:16px; height:16px;" src="https://imgmsgen.com/img/plaintext3-with-logo/fb.png"></a>&nbsp;</span>
               <span>
-                <a href="${instagram}" target="_blank" rel="noopener"><img border="0" width="16" alt="instagram icon" style="margin-right:5px; margin-bottom:1px; border:0; width:16px; height:16px;" src="https://imgmsgen.com/img/plaintext3-with-logo/it.png"></a>&nbsp;</span>
-            </td>
-            <td style="width:40%; padding-top:10px; padding-bottom:0; padding-left:0; padding-right:0; vertical-align:top" width="40%" valign="top">			
+                <a href="${instagram}" target="_blank" rel="noopener"><img width="16" alt="instagram icon" style="margin-right:5px; margin-bottom:1px; border:0; width:16px; height:16px;" src="https://imgmsgen.com/img/plaintext3-with-logo/it.png"></a>&nbsp;</span>
+            </div>
+            <div style="display:table-cell;width:40%; padding-top:10px; padding-bottom:0; padding-left:0; padding-right:0; vertical-align:top" width="40%">			
               <span>
                 <strong>
                   <a href="http://${website}" target="_blank" rel="noopener" style="text-decoration:none;"><span style="font-family:Verdana, sans-serif; font-size:10pt; color:#3b4908;">
@@ -961,10 +822,9 @@ The content of this email is confidential and intended for the recipients specif
                     </span></a>
                 </strong>
               </span>		  
-            </td>
-          </tr>
-        </tbody>
-      </table>
+            </div>
+          </div>
+      </div>
     </div>
   </body>
 </html>
