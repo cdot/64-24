@@ -1,37 +1,44 @@
-<div style="display:table;width:440px;background:transparent!important;font-family:Arial,sans-serif;width:440px;">
-  <div style="display:table-row;">
-    <div style="display:table-cell;font-size:10pt;width:290px;padding-bottom:5px;line-height:13pt;vertical-align:top;width:290px">
-	  <div style="font-size:18pt;color:#0682b0;font-weight:bold;">${forename} ${surname}</div>
-	  <div style="font-size:11pt;COLOR:#666666;padding-top:0.5em;">${role}</div>
-	</div>
-    <div style="display:table-cell;width:150px;text-align:right;vertical-align:top;">
-	  <a href="${website_url}" target="_blank" rel="noopener"><img alt="Logo" style="max-width:147px;height:auto;border:0;" src="${logo_url}"></a>
-	</div>
-  </div>
-  <div style="display:table-row;">    
-	<div style="display:table-cell;" colspan="2" style="padding-top:10px;border-top:#0682b0 1px solid;font-size:10pt">
-      <div>
-        <strong style="color:#0682b0;">Phone:</strong> ${tel}
-      </div>
-      <div>
-        <strong style="color:#0682b0;">Email:</strong>
-        <a href="mailto:${email}" style="text-decoration:none;color:#666666;">${email}</a>
-      </div>
-	  <div style="font-size:10pt;color:#666666;padding-top:1em;">
-        ${address} ${postcode}
-	  </div>
-	</div>
-  </div>
-  <div style="display:table-row;">
-    <div style="display:table-cell;line-height:12pt;font-size:10pt;vertical-align:bottom;">
-	  <span>
-		<a href="${website_url}" target="_blank" rel="noopener" style="text-decoration:none;font-weight:bold;color:#0682b0;">${website}</a>
-	  </span>
-	</div>
-	<div style="display:table-cell;text-align:right;">
-	  <a href="${facebook}" target="_blank" rel="noopener"><img alt="facebook icon" style="border:0;height:13px;width:13px" src="https://imgmsgen.com/img/out-of-the-blue/fb.png"></a>
-	  &nbsp;&nbsp;<a href="${instagram}" target="_blank" rel="noopener"><img alt="instagram icon" style="border:0;height:13px;width:13px" src="https://imgmsgen.com/img/out-of-the-blue/it.png"></a>
-	</div>
+<div style="background:transparent!important;font-family:Arial,sans-serif;width:440px;">
+  <table>
+    <tr>
+      <td style="font-size:10pt;width:290px;padding-bottom:5px;line-height:13pt;vertical-align:top;width:290px">
+	    <div style="font-size:18pt;color:#0682b0;font-weight:bold;">${forename} ${surname}</div>
+	    <div data-optional="role" style="font-size:11pt;COLOR:#666666;padding-top:0.5em;">${role}</div>
+	  </td>
+      <td style="width:150px;text-align:right;vertical-align:top;">
+	    <a href="${website_url}" target="_blank" rel="noopener"><img alt="Logo" style="max-width:147px;height:auto;border:0;" src="${logo_url}"></a>
+	  </td>
+    </tr>
+    <tr>    
+	  <td style="padding-top:10px;border-top:#0682b0 1px solid;font-size:10pt;color:#666666;">
+        <div>
+          <strong style="color:#0682b0;">Phone:</strong> ${tel}
+        </div>
+        <div>
+          <strong style="color:#0682b0;">Email:</strong>
+          <a href="mailto:${email}" style="text-decoration:none;color:#666666;">${email}</a>
+        </div>
+	    <div style="padding-top:0.5em;">
+          ${address} ${postcode}
+	    </div>
+	    <div data-optional="registration">
+          ${registration}
+	    </div>
+	  </td>
+    </tr>
+    <tr>
+      <td style="line-height:12pt;font-size:10pt;vertical-align:bottom;">
+	    <span>
+		  <a href="${website_url}" target="_blank" rel="noopener" style="text-decoration:none;font-weight:bold;color:#0682b0;">${website}</a>
+	    </span>
+	  </td>
+	  <td style="text-align:right;">
+	    <a href="${facebook}" target="_blank" rel="noopener"><img alt="facebook icon" style="border:0;height:13px;width:13px" src="https://imgmsgen.com/img/out-of-the-blue/fb.png"></a>
+	    &nbsp;&nbsp;<a href="${instagram}" target="_blank" rel="noopener"><img alt="instagram icon" style="border:0;height:13px;width:13px" src="https://imgmsgen.com/img/out-of-the-blue/it.png"></a>
+	  </td>
+    </tr>
+  </table>
+  <div data-optional="disclaimer" style="padding-top:10px;font-size:8pt;color:#999999;line-height:11px;text-align:justify;">
+    ${disclaimer}
   </div>
 </div>
-

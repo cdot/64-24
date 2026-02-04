@@ -1,18 +1,18 @@
-<div style="width:480px;font-size:10pt;font-family:Arial,sans-serif;line-height:normal;background:transparent !important;">
-  <div style="display:table;">
-    <div style="display:table-row;">	
-      <div style="display:table-cell;padding-top:10px;padding-bottom:12px;width:160px;vertical-align:top">
+<div style="width:480px;font-size:10pt;font-family:Arial,sans-serif;line-height:normal;">
+  <table>
+    <tr>	
+      <td style="padding-top:10px;padding-bottom:12px;width:160px;vertical-align:top">
         <a href="${website_url}" target="_blank">
           <img alt="Logo" style="width:141px;height:auto;border:0;" src="${logo_url}">
         </a>
-      </div>
-      <div style="display:table-cell;padding-top:6px;padding-bottom:6px; width:320px;">
+      </td>
+      <td style="padding-top:6px;padding-bottom:6px; width:320px;">
         <div>
           <div style="font-size:12pt;font-weight:bold;color:#3d3c3f;">
             ${forename} ${surname}
           </div>
         </div>
-        <div style="padding-bottom:11px;font-size:10pt;color:#3d3c3f;">
+        <div data-optional="role" style="padding-bottom:11px;font-size:10pt;color:#3d3c3f;">
           ${role}
         </div>
         <div style="font-size:10pt;color:#9b9b9b;">
@@ -27,19 +27,21 @@
         <div style="font-size:10pt;color:#9b9b9b;">
           ${postcode}
         </div>
-      </div>
-    </div>
-    <div style="display:table-row;padding-top:6px;height:22px;">
-      <div style="display:table-cell;"></div>
-      <div style="display:table-cell;">
+        <div data-optional="registration" style="font-size:10pt;color:#9b9b9b;">
+          ${business} ${registration}
+        </div>
+      </td>
+    </tr>
+    <tr style="padding-top:6px;height:22px;">
+      <td></td>
+      <td>
         <a href="${facebook}" target="_blank"><img alt="Facebook icon" style="height:20px;width:20px" src="https://imgmsgen.com/img/elegant-logo/fb.png"></a>
         &nbsp;&nbsp;
         <a href="${instagram}" target="_blank"><img alt="Instagram icon" style="height:20px;width:20px" src="https://imgmsgen.com/img/elegant-logo/it.png"></a>
-      </div>
-    </div>
-  </div>
-  <div style="font-size:8pt;border-top:1px solid;border-top-color:#1793d2;width:480px;padding-top:8px;color:#9b9b9b;text-align:justify;">
+      </td>
+    </tr>
+  </table>
+  <div data-optional="disclaimer" style="font-size:8pt;border-top:1px solid;border-top-color:#1793d2;width:480px;padding-top:8px;color:#9b9b9b;text-align:justify;">
     ${disclaimer}
   </div>
 </div>
-

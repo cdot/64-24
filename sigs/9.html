@@ -1,57 +1,58 @@
 <div style="font-family:Arial, sans-serif;background:transparent !important;">
-  <div style="display:table;width:480px;font-size:11pt;">
-    <div style="display:table-row;">
-      <div style="display:table-cell;width:160px;" style="font-size:10pt;width:160px;vertical-align:top;">
+  <table style="width:480px;font-size:11pt;">
+    <tr>
+      <td style="width:160px;" style="font-size:10pt;width:160px;vertical-align:top;">
 	    <a href="${website_url}" target="_blank">
           <img alt="Logo" style="width:125px;height:auto;border:0;" src="${logo_url}">
         </a>
-      </div>
-      <div style="display:table-cell;width:270px;vertical-align:top;line-height:11px;padding-right:1em;border-right:2px solid #29abe1;vertical-align:top;">
-	    <div style="width:270px;font-size:9pt;">
-          <div style="font-size:12pt;height:14px;line-height:14px;color:#29abe1;font-weight:bold;">
-            ${forename} ${surname}
-          </div>
-		  <div style="height:14px;line-height:14px;color:#000000;">
-			${role} | ${business}
-		  </div>
-		  <div style="padding-top:0.5em;line-height:14px;color:#000000">
-            <strong>P</strong> ${tel}
-		  </div>
-		  <div style="line-height:12px;color:#000000;">
-            <strong>E</strong> ${email}
-		  </div>	
-		  <div style="padding-top:0.5em;line-height:12px;color:#000000;">
-            ${address} ${postcode}
-		  </div>	
-		  <div style="line-height:12px;font-weight:bold">
-            <a href="${website_url}" target="_blank" rel="noopener" style="text-decoration:none;color:#29abe1;">${website}</a>
-		  </div>	
+      </td>
+      <td style="width:270px;vertical-align:top;line-height:11px;padding-right:1em;border-right:2px solid #29abe1;vertical-align:top;font-size:9pt;color:black;">
+        <div style="font-size:12pt;height:14px;line-height:14px;color:#29abe1;font-weight:bold;">
+          ${forename} ${surname}
         </div>
-      </div>
-      <div style="display:table-cell;vertical-align:top;padding-left:5px;">
-	    <div style="display:table;width:25px;">
-          <div style="display:table-row;">
-		    <div style="display:table-cell;width:25px;height:30px;vertical-align:top;">
+		<div style="height:14px;line-height:14px;">
+		  <span data-optional="role">${role} | </span>${business}
+		</div>
+		<div data-optional="registration" style="height:14px;line-height:14px;">
+		  ${registration}
+		</div>
+		<div style="padding-top:0.5em;line-height:14px;">
+          <strong>P</strong> ${tel}
+		</div>
+		<div style="line-height:12px;">
+          <strong>E</strong> ${email}
+		</div>	
+		<div style="padding-top:0.5em;line-height:12px;">
+          ${address} ${postcode}
+		</div>	
+		<div style="line-height:12px;font-weight:bold">
+          <a href="${website_url}" target="_blank" rel="noopener" style="text-decoration:none;color:#29abe1;">${website}</a>
+		</div>	
+      </td>
+      <td style="vertical-align:top;padding-left:5px;">
+	    <table style="width:25px;">
+          <tr>
+		    <td style="width:25px;height:30px;vertical-align:top;">
               <a href="${facebook}" target="_blank" rel="noopener"><img alt="facebook icon" style="border:0;height:25px;width:26px;" src="https://imgmsgen.com/img/hexagonal-logo/fb.png"></a>
-            </div>
-		  </div>
-        </div>
-      </div>
-      <div style="display:table-cell;vertical-align:top;width:25px;">
-	    <div style="display:table;width:25px;">	
-          <div style="display:table-row;">
-            <div style="display:table-cell;height:12px;font-size:1px">&nbsp;</div>
-          </div>
-		  <div style="display:table-row;">
-		    <div style="display:table-cell;width:25px;height:30px;vertical-align:top;">
+            </td>
+		  </tr>
+        </table>
+      </td>
+      <td style="vertical-align:top;width:25px;">
+	    <table style="width:25px;">	
+          <tr>
+            <td style="height:12px;font-size:1px">&nbsp;</td>
+          </tr>
+		  <tr>
+		    <td style="width:25px;height:30px;vertical-align:top;">
               <a href="${instagram}" target="_blank" rel="noopener"><img alt="instagram icon" style="border:0;height:25px;width:26px;" src="https://imgmsgen.com/img/hexagonal-logo/it.png"></a>
-            </div>
-		  </div>
-        </div>
-      </div>
-    </div> 
-  </div>
-  <div style="display:table-cell;width:480px;padding-top:15px;line-height:14px;font-size:7.5pt;color:#808080;">
+            </td>
+		  </tr>
+        </table>
+      </td>
+    </tr> 
+  </table>
+  <div data-optional="disclaimer" style="width:480px;padding-top:15px;line-height:14px;font-size:7.5pt;color:#808080;">
     ${disclaimer}
   </div>
 </div>

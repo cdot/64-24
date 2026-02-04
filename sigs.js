@@ -26,13 +26,35 @@ function lastSignature() {
 }
 
 function update() {
+  const optionals = document.querySelectorAll("[data-optional]");
+  for (const opt of optionals) {
+    if (typeof opt.dataset.display === "undefined")
+      // Cache the setting of CSS "display"
+      opt.dataset.display = (opt.style.display || "");
+    opt.style.display = opt.dataset.display;
+  }
+
   const fields = document.querySelectorAll(".field");
+  for (const field of fields) {
+    let text = field.value;
+    const name = field.id;
+    // Check it has a value and if it has a checkbox that it's ticked
+    const include = document.getElementById(`include_${name}`);
+    if ((include && !include.checked) || !text || text === "") {
+      // if it's data-optional, hide it
+      const optional = curSig.querySelectorAll(`[data-optional=${name}]`);
+      for (const opt of optional)
+        opt.style.display = "none";
+    }
+  }
+
   let html = curSig.innerHTML;
   for (const field of fields) {
     const name = field.id;
     let text = field.value;
     if (field.type === "url") {
-      // Make field_url from field, so e.g. website (which is type url) also expands website_url
+      // Make <field>_url from field, so e.g. website (which is type url)
+      // also expands website_url
       if (!/^\w+:/.test(text))
         text = "http://" + text;
       const url = URL.parse(text);
@@ -46,12 +68,15 @@ function update() {
   expanded.innerHTML = html;
 }
 
-function copyToClipboard() {
+function copyToClipboard(html) {
   if (location.protocol !== 'https:') {
     alert("Cannot copy to clipboard, https required");
   } else {
+    const html = '<html><meta charset="utf-8"><body>'
+          + expanded.innerHTML.replaceAll(/\s\s+/g, " ")
+          + "</body></html>";
     const clipboardItemData = {
-      ["text/plain"]: expanded.innerHTML.replaceAll(/\s\s+/g, " ")
+      ["text/plain"]: html
     };
     const clipboardItem = new ClipboardItem(clipboardItemData);
     navigator.clipboard.write([clipboardItem])
@@ -79,6 +104,9 @@ async function fetch_sig(id) {
   });
 }
 
+function micro_fuck(html) {
+}
+
 async function begin() {
   let i = 0;
   while (i >= 0) {
@@ -92,12 +120,32 @@ async function begin() {
   button.addEventListener("click", nextSignature);
   button = document.getElementById("switchback");
   button.addEventListener("click", lastSignature);
-  button = document.getElementById("copy");
+
+  button = document.getElementById("copy_html");
   button.addEventListener("click", copyToClipboard);
+
   const fields = document.querySelectorAll(".field");
-  for (const field of fields) {
-    button.addEventListener("change", update);
+  for (const field of fields)
+    field.addEventListener("change", update);
+
+  const switches = document.querySelectorAll("input[type=checkbox]");
+  for (const sw of switches)
+    sw.addEventListener("change", update);
+
+  const helps = document.querySelectorAll(".help_me");
+  for (const button of helps) {
+    button.addEventListener("click", function() {
+      const curr = document.querySelector(".shown");
+      if (curr) {
+        curr.classList.add("hidden");
+        curr.classList.remove("shown");
+      }
+      const next = document.getElementById(`${this.name}_help`);
+      next.classList.add("shown");
+      next.classList.remove("hidden");
+    });
   }
+
   const urlParams = new URLSearchParams(window.location.search);
   nextSignature(urlParams.get("sig"));
 }

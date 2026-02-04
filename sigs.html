@@ -1,96 +1,130 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <script src="sigs.js"></script>
+  <meta charset="utf-8">
+  <script src="sigs.js"></script>
     <style>
       .hidden {
         display:none;
       }
+      .table {
+        display:table;
+      }
+      .tr {
+        display:table-row;
+      }
+      .td {
+        display:table-cell;
+      }
+      .help {
+        border:1px solid black;
+      }
     </style>
   </head>
-  <body onload="begin()">
+  <body onload="begin()" style="font-family:Verdana,sans-serif;">
     <div class="data-row">
-      Enter your details and use &#x21e6; and &#x21e8; to pick a signature. Then use "Copy to clipboard" to copy the HTML for pasting into your mail tool.
+      <ol>
+        <li>Enter your details and format</li>
+        <li>Use &#x21e6; and &#x21e8; to pick a signature</li>
+        <li>Click "Copy HTML to clipboard"</li>
+        <li>Different mail tools work different ways. Find your mail tool in the list at the bottom for help.
+        </li>
+      </ol>
     </div>
 
-    <div style="display:table;border-spacing:0.5em;">
-      <div style="display:table-row">
-        <div style="display:table-cell">
+    <div class="table" style="border-spacing:0.5em;">
+      <div class="tr">
+        <div class="td">
           <label for="forename">First name</label>
-        </div><div style="display:table-cell">
+        </div><div class="td">
           <input type="text" class="field" id="forename" value="Jaques"/>
-        </div><div style="display:table-cell">
+        </div><div class="td">
           <label for="surname">Surname</label>
-        </div><div style="display:table-cell">
+        </div><div class="td">
           <input type="text" class="field" id="surname" value="Cousteau"/>
         </div>
       </div>
 
-      <div style="display:table-row;">
-        <div style="display:table-cell">
+      <div class="tr">
+        <div class="td">
           <label for="role">Role</label>
-        </div><div style="display:table-cell">
+        </div>
+        <div class="td">
           <input type="text" class="field" id="role" value="President"/>
+          <input type="checkbox" role="switch" id="include_role" checked="checked"></id>
         </div>
       </div>
 
-      <div style="display:table-row;">
-        <div style="display:table-cell">
+      <div class="tr">
+        <div class="td">
           <label for="email">Email:</label>
-        </div><div style="display:table-cell">
+        </div><div class="td">
           <input type="email" class="field" id="email" value="hsac.president@gmail.com"/>
-        </div><div style="display:table-cell">
+        </div><div class="td">
           <label for="tel">Tel:</label>
-        </div><div style="display:table-cell">
+        </div><div class="td">
           <input type="tel" class="field" id="tel" value="07891 234567"/>
         </div>
       </div>
 
-      <div style="display:table-row;">
-        <div style="display:table-cell">
+      <div class="tr">
+        <div class="td">
           <label for="address">Address</label>
-        </div><div style="display:table-cell">
+        </div><div class="td">
           <input type="text" class="field" id="address" value="Moss Farm, Moss Lane, Northwich, England"/>
-        </div><div style="display:table-cell">
+        </div><div class="td">
           <label for="postcode">Postcode:</label>
-        </div><div style="display:table-cell">
+        </div><div class="td">
           <input type="text" class="field" id="postcode" value="CW8 4BG">
         </div>
       </div>
 
-      <div style="display:table-row;">
-        <div style="display:table-cell">
+      <div class="tr">
+        <div class="td">
           <label for="business">Business</label>
-        </div><div style="display:table-cell">
-          <input type="text" class="field" id="business" value="Hartford Sub-Aqua Club Ltd"/>
-        </div><div style="display:table-cell">
+        </div><div class="td">
+          <input type="text" class="field" id="business" value="Hartford Sub Aqua Club Ltd"/>
+        </div>
+        <div class="td">
+          <label for="registration">Registration</label>
+        </div><div class="td">
+          <input type="text" class="field" id="registration" value="Registered in England No. 16951223"/>
+          <input type="checkbox" role="switch" id="include_registration" checked="checked"></id>
+        </div>
+      </div>
+      
+      <div class="tr">
+        <div class="td">
           <label for="website">Website</label>
-        </div><div style="display:table-cell">
+        </div><div class="td">
           <input type="url" class="field" id="website" value="hartfordscuba.co.uk"/>
-        </div><div style="display:table-cell">
+        </div>
+        <div class="td">
           <label for="logo">Logo</label>
-        </div><div style="display:table-cell">
+        </div><div class="td">
           <input type="url" class="field" id="logo" value="https://hartfordscuba.co.uk/wp-content/uploads/2018/05/cropped-logo-white-3.png"/>
         </div>
       </div>
 
-      <div style="display:table-row;">
-        <div style="display:table-cell">
+      <div class="tr">
+        <div class="td">
           <label for="facebook">Facebook</label>
-        </div><div style="display:table-cell">
+        </div><div class="td">
           <input type="url" class="field" id="facebook" value="https://www.facebook.com/HartfordScuba"/>
-        </div><div style="display:table-cell">
+        </div><div class="td">
           <label for="facebook">Instagram</label>
-        </div><div style="display:table-cell">
+        </div><div class="td">
           <input type="url" class="field" id="instagram" value="https://www.instagram.com/hartfordscuba/"/>
         </div>
         </div>
-        <div style="display:table-row;">
-          <div style="display:table-cell">
+        <div class="tr">
+          <div class="td">
             <label for="disclaimer">Disclaimer</label>
-          </div><div style="display:table-cell">
+          </div><div class="td">
             <textarea class="field" id="disclaimer">
 The content of this email is confidential and intended for the recipients specified in message only. If you received this message by mistake, please reply to this message so that we can make sure we avoid making the same mistake again.
             </textarea>
+            <input type="checkbox" role="switch" id="include_disclaimer" checked="checked"></id>
           </div>
         </div>
       </div>
@@ -107,8 +141,45 @@ The content of this email is confidential and intended for the recipients specif
     </div>
 
     <hr>
-    <div style="margin-top:2em">
-      <button id="copy">Copy to clipboard</button>
+    <div style="margin-top:1em">
+      <button id="copy_html">Copy HTML to clipboard</button>
+    </div>
+
+    <div style="margin-top:0.5em">
+      Help for mail tools
+    </div>
+    <div>
+      <button class="help_me" name="outlook"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Microsoft_Outlook_Icon_%282025%E2%80%93present%29.svg/250px-Microsoft_Outlook_Icon_%282025%E2%80%93present%29.svg.png" height="16" width="16" loading="lazy">Outlook</button>
+      <button class="help_me" name="thunderbird"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Thunderbird_2023_icon.png/250px-Thunderbird_2023_icon.png" width="16" height="16">Thunderbird</button>
+    </div>
+
+    <div id="thunderbird_help" class="help hidden">
+      <ol>
+        <li>Click "Copy HTML to clipboard"</li>
+        <li>Open Thunderbird</li>
+        <li>In the left bar, left-click to select the account you are adding the signature for.</li>
+        <li>Right-click and select "Settings"</li>
+        <li>Make sure "Use HTML" is selected.</li>
+        <li>Paste the html into the "Signature text" box.</li>
+      </ol>
+    </div>
+
+    <div id="outlook_help" class="help hidden">
+      For Outlook on Windows:
+      <ol>
+        <li>Use "Method 2" as described <a href="https://www.timeatlas.com/add-outlook-html-signature/">here.</a></li>
+      </ol>
+      For Outlook web:
+      <ol>
+        <li>Using the mouse, select the rendered signature above and Ctrl+C</li>
+        <li>Open Outlook Web</li>
+        <li>Click the gear icon in the top right</li>
+        <li>Click "Account"</li>
+        <li>Click "Signature"</li>
+        <li>Select "Add signature"</li>
+        <li>Enter a signature name</li>
+        <li>In the text box, Ctrl+V</li>
+      </ol>
     </div>
   </body>
 </html>
