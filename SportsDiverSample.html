@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Diver Theory Sample Paper - Interactive Instructor Edition</title>
+    <style>
+        :root {
+            --primary-color: #004080;
+            --secondary-color: #0077b6;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --answer-bg: #eef9f2;
+            --answer-border: #2a9d8f;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .intro-box {
+            background: #eef2f7;
+            padding: 15px 20px;
+            border-left: 4px solid var(--primary-color);
+            margin-bottom: 25px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .instructions {
+            background: #fff8e7;
+            border: 1px solid #ffeeba;
+            padding: 15px 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .instructions h3 {
+            margin-top: 0;
+            color: #856404;
+            font-size: 16px;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .question-card {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.2s ease;
+        }
+
+        .question-card:hover {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-color: var(--secondary-color);
+        }
+
+        .question-text {
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        ul.options-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0 0 15px 0;
+        }
+
+        ul.options-list li {
+            padding: 6px 10px;
+            margin-bottom: 4px;
+            border-radius: 4px;
+            background: #f9f9f9;
+            font-size: 14px;
+        }
+
+        .reveal-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+
+        .reveal-btn:hover {
+            background-color: #005f73;
+        }
+
+        .answer-box {
+            display: none;
+            margin-top: 15px;
+            padding: 12px 15px;
+            background-color: var(--answer-bg);
+            border-left: 4px solid var(--answer-border);
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .answer-box.active {
+            display: block;
+        }
+
+        .answer-label {
+            font-weight: bold;
+            color: #1b4332;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Sports Diver Theory Sample Paper</h1>
+        <div class="intro-box">
+            This interactive sample paper combines student questions with instructor explanation notes[cite: 235]. Click the <strong>"Reveal Instructor Answer"</strong> button under any question to check the correct option and read accompanying notes[cite: 1, 235].<br>
+            <em>Created by Crawford Currie (Sep 2020, updated Jan 2026).</em>
+        </div>
+    </header>
+
+    <div class="instructions">
+        <h3>Exam Guidance</h3>
+        <p><strong>Multiple Choice:</strong> Choose the single best answer[cite: 1, 235].<br>
+        <strong>Multiple Option:</strong> Select the letter corresponding to the correct combination of alternatives (e.g., 1+2 only)[cite: 1, 235].<br>
+        <strong>You will need:</strong> Pencil, Eraser & Calculator, BSAC 88 Decompression Tables Levels 1-4, BSAC Nitrox Tables[cite: 1, 235].</p>
+    </div>
+
+    <!-- SECTION ST1 -->
+    <h2 class="section-title">Section ST1: Tides and Underwater Conditions</h2>
+
+    <div class="question-card">
+        <div class="question-text">1. The difference between High Water (HW) and Low Water (LW) is known as:</div>
+        <ul class="options-list">
+            <li>1. The ebb tide</li>
+            <li>2. The tidal current</li>
+            <li>3. The full tide</li>
+            <li>4. The tidal range</li>
+            <li>5. Spring tide</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 4. The tidal range
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">2. What is “slack water”?</div>
+        <ul class="options-list">
+            <li>1. The time over which the tide is changing direction</li>
+            <li>2. Inland water that is not subject to tidal action</li>
+            <li>3. The time when the water is moving fastest</li>
+            <li>4. A flat calm</li>
+            <li>5. The distance between a diver and the boat</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 1. The time over which the tide is changing direction
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">3. What would you expect to change when passing through a “thermocline”?</div>
+        <ul class="options-list">
+            <li>1. Visibility</li>
+            <li>2. Temperature</li>
+            <li>3. Pressure</li>
+            <li>4. Buoyancy</li>
+            <li>5. Air consumption</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 2. Temperature
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">4. Which of the following is often associated with worse than usual underwater visibility?</div>
+        <ul class="options-list">
+            <li>1. Site with a rocky bottom</li>
+            <li>2. Tide flooding into an estuary</li>
+            <li>3. Lots of boat traffic</li>
+            <li>4. Recent storms</li>
+            <li>5. A muddy bottom</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 4. Recent storms <em>(Note from instructor notes: Plankton blooms and mud kicked up also impact visibility[cite: 18, 19]).</em>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">5. You have been told there is a “plankton bloom” at your chosen dive site. What effects would you expect?</div>
+        <ul class="options-list">
+            <li>1. reduced visibility for divers</li>
+            <li>2. risk of surface traffic from fishing vessels</li>
+            <li>3. warmer water</li>
+            <li>4. strong currents</li>
+            <li>5. increased pollution levels</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 1. reduced visibility for divers
+        </div>
+    </div>
+
+    <!-- SECTION ST2 -->
+    <h2 class="section-title">Section ST2: Diver Rescue and BLS</h2>
+
+    <div class="question-card">
+        <div class="question-text">6. The mnemonic DrABC is used in rescues. What does the B stand for?</div>
+        <ul class="options-list">
+            <li>1. Buoyancy</li>
+            <li>2. Breathing</li>
+            <li>3. Bleeding</li>
+            <li>4. Blanket</li>
+            <li>5. Body</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 2. Breathing <em>(Full mnemonic breakdown from instructor key: Danger, Response, Airway, Breathing, Circulation[cite: 235]).</em>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">7. Your buddy has stopped in the water and is staring wide-eyed. You should</div>
+        <ul class="options-list">
+            <li>1. move close to your buddy</li>
+            <li>2. give the OK? signal</li>
+            <li>3. offer them your AS</li>
+            <li>4. launch a DSMB</li>
+        </ul>
+        <ul class="options-list" style="margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 8px;">
+            <li>1. 1 only</li>
+            <li>2. 1+2 only</li>
+            <li>3. 1+2+4 only</li>
+            <li>4. 3+4 only</li>
+            <li>5. all four</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 2. 1+2 only <em>(Instructor note: "...they might just have seen the enormous shark behind you…"[cite: 235]).</em>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">8. When administering basic life support (CC and RB) how often should you stop to check the casualty?</div>
+        <ul class="options-list">
+            <li>1. every minute</li>
+            <li>2. every 5 minutes</li>
+            <li>3. when normal breathing resumes</li>
+            <li>4. after every 30 compressions</li>
+            <li>5. when oxygen becomes available</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 3. when normal breathing resumes
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">9. Which of the following is appropriate when an unconscious breathing casualty is recovered to the surface?</div>
+        <ul class="options-list">
+            <li>1. provide buoyancy by inflating the casualty's BC</li>
+            <li>2. summon assistance</li>
+            <li>3. give rescue breaths</li>
+            <li>4. remove mask and mouthpiece and provide neck extension</li>
+        </ul>
+        <ul class="options-list" style="margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 8px;">
+            <li>1. 1 only</li>
+            <li>2. 1+2 only</li>
+            <li>3. 1+2+4 only</li>
+            <li>4. 3+4 only</li>
+            <li>5. all four</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 3. 1+2+4 only <em>(Instructor note: rescue breaths are only for a non-breathing casualty[cite: 235]).</em>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">10. What should the approximate rate of compressions per minute be when giving BLS?</div>
+        <ul class="options-list">
+            <li>1. 60-80</li>
+            <li>2. 80-90</li>
+            <li>3. 100-120</li>
+            <li>4. 120-150</li>
+            <li>5. 150-200</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 3. 100-120 <em>(Instructor note: The song “Nelly the Elephant” gives the right rhythm[cite: 235]).</em>
+        </div>
+    </div>
+
+    <!-- SECTION ST3 -->
+    <h2 class="section-title">Section ST3: Equipment and Techniques</h2>
+
+    <div class="question-card">
+        <div class="question-text">11. Where would you use a SMB?</div>
+        <ul class="options-list">
+            <li>1. on a wreck in poor visibility</li>
+            <li>2. on a wreck in good visibility</li>
+            <li>3. where there is a lot of surface traffic</li>
+            <li>4. in gullies and kelp</li>
+            <li>5. in a cave</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 3. where there is a lot of surface traffic <em>(Instructor note: used to warn surface traffic/boat users of your presence[cite: 235]).</em>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">12. You have swum away from the bottom of the shot line on a bearing of 020°. What bearing should you follow to return to the shot?</div>
+        <ul class="options-list">
+            <li>1. 90°</li>
+            <li>2. 160°</li>
+            <li>3. 180°</li>
+            <li>4. 200°</li>
+            <li>5. 340°</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 4. 200° <em>(Instructor calculation: 20 + 180 = 200[cite: 235]).</em>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">13. Which of the following best describe a shot line?</div>
+        <ul class="options-list">
+            <li>1. it provides the shortest possible route between the surface and the dive site</li>
+            <li>2. it provides a secure, visual reference point on descent/ascent</li>
+            <li>3. it can be used as an SMB and carried by the divers</li>
+            <li>4. it provides boat cover with a clear reference point to be able to patrol the area</li>
+        </ul>
+        <ul class="options-list" style="margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 8px;">
+            <li>1. 1 only</li>
+            <li>2. 1+2 only</li>
+            <li>3. 1+2+4 only</li>
+            <li>4. 3+4 only</li>
+            <li>5. all four</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 2. 1+2 only
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">14. Which of the following should you always do when using a distance line?</div>
+        <ul class="options-list">
+            <li>1. Carry a line cutter</li>
+            <li>2. Keep the reel close to your body</li>
+            <li>3. Make sure your buddy holds the line too</li>
+            <li>4. Make sure there is plenty of slack in the line</li>
+            <li>5. Swim backwards</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 1. Carry a line cutter <em>(Note: corresponding to option 1 in the primary list).</em>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">15. The dive manager has told you to swim North West to find a wreck. What compass bearing should you follow?</div>
+        <ul class="options-list">
+            <li>1. 90°</li>
+            <li>2. 100°</li>
+            <li>3. 180°</li>
+            <li>4. 275°</li>
+            <li>5. 315°</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 5. 315°
+        </div>
+    </div>
+
+    <!-- SECTION ST4 -->
+    <h2 class="section-title">Section ST4: Deeper Diving and Tables</h2>
+
+    <div class="question-card">
+        <div class="question-text">16. “Dive Time” is defined as:</div>
+        <ul class="options-list">
+            <li>1. Time between entering the water to leaving the water</li>
+            <li>2. Time between entering the water and arriving at the 6m safety stop</li>
+            <li>3. Time between entering the water and arriving at the first decompression stop</li>
+            <li>4. Time between surfacing from the first dive and entering the water for the next</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 3. Time between entering the water and arriving at the first decompression stop <em>(Instructor note: candidates should understand distinction between first deco stop and the 6m safety stop[cite: 235]).</em>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">17. Which of the following increase the risk of nitrogen narcosis?</div>
+        <ul class="options-list">
+            <li>1. fast descents</li>
+            <li>2. recent alcohol consumption</li>
+            <li>3. exercise underwater</li>
+            <li>4. cold water and poor visibility</li>
+        </ul>
+        <ul class="options-list" style="margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 8px;">
+            <li>1. 1 only</li>
+            <li>2. 1+2 only</li>
+            <li>3. 1+2+4 only</li>
+            <li>4. 3+4 only</li>
+            <li>5. all four</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 5. all four
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">18. A diver carries out a dive to 30m using Nitrox 32% with a dive time of 26 minutes. Using tables, what is the CNS% uptake at the end of the dive time?</div>
+        <ul class="options-list">
+            <li>1. 11.2%</li>
+            <li>2. 14.56%</li>
+            <li>3. 19.6%</li>
+            <li>4. 29.6%</li>
+            <li>5. 37.0%</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 2. 14.56% <em>(Instructor calculation: ppO2 = 1.28, from table 11.2 + 2.8 + 0.56 = 14.56[cite: 235]).</em>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">19. You plan to use BSAC 88 air tables to do a first dive to 20m for 30 minutes in the sea, followed by a helicopter ride to a mountain lake at an altitude of 655m. The atmospheric pressure at sea level is 1010mb. You intend to set off for the lake 90 minutes after surfacing from the first dive, the journey time will be 12 minutes, and you will dive 80 minutes after arriving. Which table should you use to plan the dive in the lake?</div>
+        <ul class="options-list">
+            <li>1. no stops required</li>
+            <li>2. use level 2 table D</li>
+            <li>3. use level 1 table D</li>
+            <li>4. use level 2 table C</li>
+            <li>5. use level 1 table C</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 2. use level 2 table D <em>(Instructor key sequence: E/1 - 90mins -> C/1, transfer table C/1 -> D/2[cite: 235]).</em>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">20. You are diving on Nitrox 27, using tables. After surfacing from a first dive which required decompression stops, you and your buddy plan a surface interval of 3 hours, after which you will dive to 20m for 30 minutes. What decompression stops are required for the second dive?</div>
+        <ul class="options-list">
+            <li>1. no stops needed</li>
+            <li>2. 1 min at 6m</li>
+            <li>3. 3 min at 6m</li>
+            <li>4. 1 min at 9m and 9 min at 6m</li>
+            <li>5. 6 min at 6m</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 3. 3 min at 6m <em>(Instructor note: deco required therefore must be G; G -> 3h -> C[cite: 235]).</em>
+        </div>
+    </div>
+
+    <!-- SECTION ST5 -->
+    <h2 class="section-title">Section ST5: Breathing Gas Planning</h2>
+
+    <div class="question-card">
+        <div class="question-text">21. You plan to dive to 25m for 24 minutes with a 10 litre cylinder filled to 230 bar. Which line of the following table is correct? All figures are in litres.</div>
+        <ul class="options-list">
+            <li>1. Need 2100L, 2300L available</li>
+            <li>2. Need 1260L, 3450L available</li>
+            <li>3. Need 1500L, 1150L available</li>
+            <li>4. Need 3390L, 2300L available</li>
+            <li>5. Need 2700L, 2400L available</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 4. Need 3390L, 2300L available <em>(Instructor formula: (3.5 * 24 * 25 + 1.6 * 4 * 25) * 1.5[cite: 235]).</em>
+        </div>
+    </div>
+
+<div class="question-card">
+        <div class="question-text">22. Is a 12 litre cylinder filled to 230 bar enough for a dive to 35m for 20 minutes?</div>
+        <ul class="options-list">
+            <li>1. yes, because it contains 2760 litres of gas</li>
+            <li>2. yes because 2250 litres of gas are needed</li>
+            <li>3. yes because 3375 litres of gas are needed</li>
+            <li>4. no because 2750 litres of gas are needed</li>
+            <li>5. no because 3675 litres of gas are needed</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 5. no because 3675 litres of gas are needed <em>(Instructor calculation: Deco 1@6, (4.5 * 20 * 25 + 1.6 * 5 * 25) = 2450 * 1.5 with safety[cite: 235]).</em>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">23. Which of the following are disadvantages of the octopus DV type of AS?</div>
+        <ul class="options-list">
+            <li>1. both divers breathe from the same cylinder</li>
+            <li>2. there is no protection against first stage failure</li>
+            <li>3. it needs an accessible isolation valve</li>
+            <li>4. it requires extra buoyancy</li>
+        </ul>
+        <ul class="options-list" style="margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 8px;">
+            <li>1. 1 only</li>
+            <li>2. 1+2 only</li>
+            <li>3. 1+2+4 only</li>
+            <li>4. 3+4 only</li>
+            <li>5. all four</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 3. 1+2+4 only
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">24. The AS used for a dive should reflect the likely implications of a breathing gas supply failure at the most critical part of the dive, where the amount of backup breathing gas needed is greatest. What is the most critical point of a dive requiring decompression stops?</div>
+        <ul class="options-list">
+            <li>1. start of dive</li>
+            <li>2. end of no-stop time</li>
+            <li>3. start of ascent as planned</li>
+            <li>4. when 1/2 of available gas has been used</li>
+            <li>5. end of planned dive time</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 2. end of no-stop time <em>(Note: represents start of mandatory decompression requirements).</em>
+        </div>
+    </div>
+
+    <!-- SECTION ST6 -->
+    <h2 class="section-title">Section ST6: Branch Role and Procedures</h2>
+
+    <div class="question-card">
+        <div class="question-text">25. Which of the following is a Sports Diver not qualified to do?</div>
+        <ul class="options-list">
+            <li>1. dive to 20m with an Ocean Diver under the supervision of a Dive Manager</li>
+            <li>2. dive to 35m with another Sports Diver</li>
+            <li>3. dive to 35m with an Ocean Diver under the supervision of a Dive Manager</li>
+            <li>4. dive to 50m with a First Class Diver</li>
+        </ul>
+        <ul class="options-list" style="margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 8px;">
+            <li>1. 1 only</li>
+            <li>2. 1+2 only</li>
+            <li>3. 1+2+4 only</li>
+            <li>4. 3+4 only</li>
+            <li>5. all four</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 4. 3+4 only <em>(Instructor note: note qualification criteria changes[cite: 235]).</em>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">26. Which of the following are duties of the surface cover organised by the Dive Manager?</div>
+        <ul class="options-list">
+            <li>1. watching for divers surfacing</li>
+            <li>2. monitoring the weather</li>
+            <li>3. serving hot drinks and biscuits</li>
+            <li>4. assisting divers from the water</li>
+        </ul>
+        <ul class="options-list" style="margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 8px;">
+            <li>1. 1 only</li>
+            <li>2. 1+2 only</li>
+            <li>3. 1+2+4 only</li>
+            <li>4. 3+4 only</li>
+            <li>5. all four</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 3. 1+2+4 only
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">27. When diving open circuit with a rebreather diver, the dive should always be:</div>
+        <ul class="options-list">
+            <li>1. planned using the most conservative decompression schedule</li>
+            <li>2. planned to the most conservative Maximum Operating Depth</li>
+            <li>3. planned using tables</li>
+            <li>4. conducted according to the buddies’ least sophisticated computer</li>
+            <li>5. aborted, rebreathers are incompatible with open circuit</li>
+        </ul>
+        <ul class="options-list" style="margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 8px;">
+            <li>1. 1 only</li>
+            <li>2. 1+2 only</li>
+            <li>3. 1+2+4 only</li>
+            <li>4. 3+4 only</li>
+            <li>5. all four</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 2. 1+2 only <em>(Aligned with instructor safety principles for mixed configuration teams[cite: 229]).</em>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">28. A Sports Diver is expected to be a role model for less experienced divers. This means they must:</div>
+        <ul class="options-list">
+            <li>1. Act as assistant dive manager when requested</li>
+            <li>2. Understand the skills required to dive a rebreather</li>
+            <li>3. Demonstrate good diving skills and attitude</li>
+            <li>4. Correct their buddy’s mistakes at every opportunity</li>
+        </ul>
+        <ul class="options-list" style="margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 8px;">
+            <li>1. 1 only</li>
+            <li>2. 1+3 only</li>
+            <li>3. 1+3+4 only</li>
+            <li>4. 2+4 only</li>
+            <li>5. all four</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 2. 1+3 only
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">29. Every buddy pair needs to identify one of the pair as the leader. The leader's primary responsibility is to:</div>
+        <ul class="options-list">
+            <li>1. Navigate</li>
+            <li>2. Stay ahead of their buddy</li>
+            <li>3. Plan the dive</li>
+            <li>4. Ensure a safe and enjoyable dive</li>
+            <li>5. Extend the experience of less experienced buddies</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 4. Ensure a safe and enjoyable dive
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">30. What should a pre-dive brief cover?</div>
+        <ul class="options-list">
+            <li>1. Discipline</li>
+            <li>2. Safety</li>
+            <li>3. Dive objectives</li>
+            <li>4. Equipment</li>
+            <li>5. Signals</li>
+        </ul>
+        <ul class="options-list" style="margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 8px;">
+            <li>1. 3 only</li>
+            <li>2. 2+3 only</li>
+            <li>3. 1+3+4 only</li>
+            <li>4. 1+5 only</li>
+            <li>5. all five</li>
+        </ul>
+        <button class="reveal-btn" onclick="toggleAnswer(this)">Reveal Instructor Answer</button>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span> 5. all five <em>(Matches the SEEDS acronym: Safety, Exercise/Objectives, Equipment, Discipline, Signals[cite: 216]).</em>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function toggleAnswer(button) {
+        const answerBox = button.nextElementSibling;
+        answerBox.classList.toggle('active');
+        if (answerBox.classList.contains('active')) {
+            button.textContent = 'Hide Instructor Answer';
+        } else {
+            button.textContent = 'Reveal Instructor Answer';
+        }
+    }
+</script>
+
+</body>
+</html>
